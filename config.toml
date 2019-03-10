@@ -1,6 +1,6 @@
-baseURL = "http://example.org/"
+baseURL = "http://tatsumi-clinic.org/"
 languageCode = "en-us"
-title = "Timer | Responsive Multipurpose Bootstrap Hugo Template"
+title = "Tatsumi-clinic"
 theme = "timer-hugo"
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
@@ -9,29 +9,33 @@ theme = "timer-hugo"
 [menu]
     # Navbar Menus
     [[menu.nav]]
-        name    = "About"
-        url     = "/about"
+        name    = "患者様の声"
+        url     = "/review"
         weight  = 2
     [[menu.nav]]
-        name    = "Service"
-        url     = "/service"
+        name    = "施術の流れ"
+        url     = "/follow"
         weight  = 3
     [[menu.nav]]
-        name    = "Gallery"
-        url     = "/gallery"
+        name    = "選ばれる理由"
+        url     = "/reason"
         weight  = 4
     [[menu.nav]]
-        name    = "Blog"
-        url     = "/blog"
+        name    = "施術費用"
+        url     = "/cost"
         weight  = 5
     [[menu.nav]]
-        name    = "Contact"
-        url     = "/contact"
+        name    = "アクセス"
+        url     = "/access"
         weight  = 6
+    [[menu.nav]]
+        name    = "診察予約"
+        url     = "/book"
+        weight  = 7
 
 # Site Params
 [params]
-    home = "Home"
+    home = "ホーム"
     logo = "images/logo.png"
     dateFormat = "6 January 2006"
     # Meta data
@@ -82,5 +86,3 @@ theme = "timer-hugo"
         enable  = true
         title   = "SOME OF OUR FEATURES WORKS"
         subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
-
-    
