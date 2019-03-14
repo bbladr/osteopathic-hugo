@@ -1,4 +1,4 @@
-baseURL = "http://tatsumi-clinic.org/"
+baseURL = "https://tatsumi-osteopathic-clinic.netlify.com/"
 languageCode = "en-us"
 title = "Tatsumi-clinic"
 theme = "timer-hugo"
