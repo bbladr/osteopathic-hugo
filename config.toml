@@ -45,10 +45,10 @@ theme = "timer-hugo"
     # Google Analitycs
     googleAnalitycsID = "Your ID"
 
-    # Banner Section
-    [params.banner]
+    # headline Section
+    [params.headline]
         enable  = true
-        bgImage = "image/home/home1.png"
+        Image = "image/home/home1.png"
         heading = ""
         description = ""
         # btn     = true
@@ -61,29 +61,45 @@ theme = "timer-hugo"
         # [[params.banner.flipText]]
         #     title   = "FATHER"
 
-    # # Homepage About Section
-    # [params.about]
-    #     enable  = true
-    #     title   = "ABOUT ME"
-    #     content = "Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero."
-    #     image   = "images/about/about.jpg"
+    # Banner Section
+    [params.banner]
+        enable  = true
+        Image = "image/home/home1.png"
+        heading = ""
+        description = ""
+        btn     = true
+        btnText = ""
+        btnURL  = "https://themefisher.com/"
+        [[params.banner.flipText]]
+            title   = "DESIGNER"
+        [[params.banner.flipText]]
+            title   = "DEVELOPER"
+        [[params.banner.flipText]]
+            title   = "FATHER"
 
-    # # Call to Action
-    # [params.cta]
-    #     enable  = true
-    #     title   = "SO WHAT YOU THINK ?"
-    #     content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium."
-    #     btnText = "Contact with me"
-    #     btnURL  = "/contact"
+    # Homepage About Section
+    [params.about]
+        enable  = true
+        title   = "ABOUT ME"
+        content = "Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero."
+        image   = "images/about/about.jpg"
 
-    # # Portfolio Section On Homepage
-    # [params.portfolio]
-    #     enable  = true
-    #     title   = "Latest Works"
-    #     subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+    # Call to Action
+    [params.cta]
+        enable  = true
+        title   = "SO WHAT YOU THINK ?"
+        content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium."
+        btnText = "Contact with me"
+        btnURL  = "/contact"
 
-    # # Feature Product Section
-    # [params.featureProduct]
-    #     enable  = true
-    #     title   = "SOME OF OUR FEATURES WORKS"
-    #     subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+    # Portfolio Section On Homepage
+    [params.portfolio]
+        enable  = true
+        title   = "Latest Works"
+        subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+
+    # Feature Product Section
+    [params.featureProduct]
+        enable  = true
+        title   = "SOME OF OUR FEATURES WORKS"
+        subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
