@@ -37,6 +37,7 @@ theme = "timer-hugo"
 [params]
     home = "ホーム"
     logo = "image/logo.png"
+    phone = "image/phone-num.png"
     dateFormat = "1 April 2019"
     # Meta data
     description = "Home page"
