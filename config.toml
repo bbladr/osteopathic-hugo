@@ -61,6 +61,37 @@ theme = "timer-hugo"
         # [[params.banner.flipText]]
         #     title   = "FATHER"
 
+    # question Section
+    [params.question]
+        enable  = true
+        # Image = "image/home/home1.png"
+        heading = ""
+        description = ""
+        # btn     = true
+        # btnText = ""
+        # btnURL  = "https://themefisher.com/"
+        # [[params.banner.flipText]]
+        #     title   = "DESIGNER"
+        # [[params.banner.flipText]]
+        #     title   = "DEVELOPER"
+        # [[params.banner.flipText]]
+        #     title   = "FATHER"
+
+    # subheader Section
+    [params.subheader]
+        enable  = true
+        # Image = "image/home/home1.png"
+        heading = ""
+        description = ""
+        # btn     = true
+        # btnText = ""
+        # btnURL  = "https://themefisher.com/"
+        # [[params.banner.flipText]]
+        #     title   = "DESIGNER"
+        # [[params.banner.flipText]]
+        #     title   = "DEVELOPER"
+        # [[params.banner.flipText]]
+        #     title   = "FATHER"
     # Banner Section
     [params.banner]
         enable  = true
