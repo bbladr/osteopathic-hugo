@@ -33,7 +33,7 @@
 #question div.q-elem span.q-mark {
   font-weight: 700;
   font-size: 20px;
-  color: #1c86af;
+  color: #00b2c6;
   margin: 15px 10px;
 }
 
@@ -42,6 +42,52 @@
   margin: 0px;
 }
 
-#subheader p.title-main {
+#subheader div.title {
+  padding: 30px 0px;
+}
+
+#subheader div.title div.title-main {
   color: #1c86af;
+  font-size: 2.8em;
+  font-weight: 700;
+  margin: 20px 150px;
+  border-bottom: Solid 1px #dddddd;
+}
+
+#subheader div.title p.title-description {
+  color: #333;
+  font-size: 18.24px;
+}
+
+#subheader div.list div.list-content {
+  background-color: white;
+  border-radius: 10px;
+  min-width: 700px;
+  padding: 12px;
+  margin: 12px 0px;
+  color: #555;
+  font-size: 18.24px;
+  font-weight: 700;
+}
+
+#subheader div.list div.list-content i {
+  color: #1c86af;
+  margin: 3px;
+}
+
+#subheader div.solution {
+  margin: 50px 0px;
+  color: #333333;
+}
+
+#subheader div.solution p.solution-main {
+  color: #d00;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#subheader div.solution p.solution-content span.emphasize {
+  font-size: 1.1em;
+  font-weight: 700;
+  text-decoration: underline;
 }
