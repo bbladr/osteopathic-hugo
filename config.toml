@@ -112,7 +112,7 @@ theme = "timer-hugo"
     # profile Section
     [params.profile]
         enable  = true
-        # Image = "image/home/home1.png"
+        Image = "image/profile.jpg"
         heading = ""
         description = ""
         # btn     = true

@@ -1,0 +1,36 @@
+{{ if .Site.Params.profile.enable }}
+{{ "<!-- Slider Section Start -->" | safeHTML }}
+<section id="hero-area" style='background-color: #EEE'>
+    <div class="container" id="profile">
+        <div class="row">
+            <div class="col-md-12 ">
+                <div class="title text-center">
+                    <div class="title-main">院長プロフィール</div>
+                    <p class="title-description">私の想いをお伝えします。</p>
+                </div>
+                <div class="image pull-right">
+                    <img src="{{ .Site.Params.profile.Image }}">
+                </div>
+                <div class="description">
+                    <div class="description-upside pull-left">
+                        <strong>私は自分の施術を通し、病院や整骨院でその場しのぎの施術を受けてなかなか改善しない人や、どこに行っても改善しない人を助けていきたいという想いがあります。それがこの仕事のやりがいです。</strong>
+                        <p>初めまして！私、整体院 寛千の院長、北原 寛千と申します。</p>
+                        <p>学生時代は水泳に本腰を入れ、泳ぎまくっていました。そんな中、祖母の骨折を機にリハビリテーションに興味を持ち、夢は叶い、病院勤務のリハビリセラピストに。</p>
+                        <p>就職先は骨折や脳卒中で入院されている方が多く、患者さんは毎日がリハビリ。そんな中、私が担当してきた患者様は転倒による足の骨折を患った方で、加えて多くの方がひどい腰痛を患っていたのです。</p>
+                        <p>骨折に対するリハビリはもちろんのこと、腰に対しても必至に治療をする毎日。しかし、どれだけ腰に治療をしても腰痛はなかなか改善していかなかったのです。それから必至に勉強を行い、私はついに、決定的とも言える痛み治療の根源に辿り着いたのです。それは…</p>
+                    </div>
+                    <div class="description-downside pull-left">
+                        <p class="emphasize"><strong>「痛みのある場所に原因はない」ということに。</strong></p>
+                        <p>それからというもの、現場での腰痛改善率が大幅に向上し、多くの患者様から喜びの声をいただきました。</p>
+                        <p>しかし世の中の治療院では、「腰が痛い」という訴えに対し、「腰」に対してのみ治療を行い、結果腰痛は十分に改善できずその場しのぎの治療を受けてしまっている方が多くいます。また、医師より「手術以外ではあなたの腰痛は改善しない」とまで言われてしまっている方が世の中には多くいらっしゃいます。これはとても危ない事ですし、最短距離で回復することを邪魔します。</p>
+                        <p>ですので、そのような悩みを持つ方の力になりたく、私は独立を決意し、慢性腰痛専門で施術を行う理想の整体院を作りました。私は自分の施術を通し、病院や整骨院でその場しのぎの施術を受けてなかなか改善しない人や、どこに行っても改善しない人を助けていきたいという想いがあります。それがこの仕事のやりがいです。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- Slider Section End -->" | safeHTML }}
+{{ end }}
+
+<!-- original is banner.html -->
