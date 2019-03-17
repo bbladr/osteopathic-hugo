@@ -80,6 +80,38 @@ theme = "timer-hugo"
     # subheader Section
     [params.subheader]
         enable  = true
+        Image = "image/image1.png"
+        heading = ""
+        description = ""
+        # btn     = true
+        # btnText = ""
+        # btnURL  = "https://themefisher.com/"
+        # [[params.banner.flipText]]
+        #     title   = "DESIGNER"
+        # [[params.banner.flipText]]
+        #     title   = "DEVELOPER"
+        # [[params.banner.flipText]]
+        #     title   = "FATHER"
+
+    # review Section
+    [params.review]
+        enable  = true
+        # Image = "image/image1.png"
+        heading = ""
+        description = ""
+        # btn     = true
+        # btnText = ""
+        # btnURL  = "https://themefisher.com/"
+        # [[params.banner.flipText]]
+        #     title   = "DESIGNER"
+        # [[params.banner.flipText]]
+        #     title   = "DEVELOPER"
+        # [[params.banner.flipText]]
+        #     title   = "FATHER"
+
+    # profile Section
+    [params.profile]
+        enable  = true
         # Image = "image/home/home1.png"
         heading = ""
         description = ""
@@ -92,6 +124,7 @@ theme = "timer-hugo"
         #     title   = "DEVELOPER"
         # [[params.banner.flipText]]
         #     title   = "FATHER"
+
     # Banner Section
     [params.banner]
         enable  = true
