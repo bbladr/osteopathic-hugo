@@ -141,6 +141,25 @@ theme = "timer-hugo"
         # [[params.banner.flipText]]
         #     title   = "FATHER"
 
+    # navigate Section
+    [params.navigate]
+        enable  = true
+        Image1 = "image/home/home2.png"
+        Image2 = "image/home/home3.png"
+        Image3 = "image/home/home4.png"
+        Image4 = "image/home/home5.png"
+        heading = ""
+        description = ""
+        # btn     = true
+        # btnText = ""
+        # btnURL  = "https://themefisher.com/"
+        # [[params.banner.flipText]]
+        #     title   = "DESIGNER"
+        # [[params.banner.flipText]]
+        #     title   = "DEVELOPER"
+        # [[params.banner.flipText]]
+        #     title   = "FATHER"
+
     # Banner Section
     [params.banner]
         enable  = true

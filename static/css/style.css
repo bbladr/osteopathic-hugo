@@ -56,7 +56,7 @@
 
 #subheader div.title p.title-description {
   color: #333;
-  font-size: 18.24px;
+  font-size: 1.2em;
 }
 
 #subheader div.list div.list-content {
@@ -106,7 +106,7 @@
 
 #review div.title p.title-description {
   color: #333;
-  font-size: 18.24px;
+  font-size: 1.2em;
 }
 
 #profile div.title {
@@ -123,7 +123,7 @@
 
 #profile div.title p.title-description {
   color: #333;
-  font-size: 18.24px;
+  font-size: 1.2em;
 }
 
 #profile div.description {
@@ -156,6 +156,49 @@
 
 #event div.title p.title-description {
   color: #333;
-  font-size: 18.24px;
+  font-size: 1.2em;
   margin: 30px 0px;
+}
+
+#navigate div.nav-title {
+  margin-top: 80px;
+}
+#navigate div.nav-box {
+  background-color: #FFF;
+}
+
+#navigate div.nav-cost {
+  margin: 0px 30px;
+  padding-top: 40px;
+}
+
+#navigate div.blue-box {
+  background-color: #1c86af;
+  color: #FFF;
+  font-size: 1.1em;
+  margin: 0px 30px;
+  padding: 20px;
+}
+
+#navigate div.blue-box span.emphasize {
+  color: #FF0;
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+#navigate div.addition-box {
+  background-color: #FFF;
+  margin: 20px 0px;
+  padding: 30px;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+
+#navigate div.addition-box p.emphasize {
+  color: #A00;
+  font-weight: 700;
+}
+
+#navigate div.line-box {
+  margin-bottom: 70px;
 }
