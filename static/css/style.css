@@ -142,3 +142,20 @@
 #profile div.description p.emphasize {
   font-size: 1.3em;
 }
+
+#event div.title {
+  padding: 40px 0px;
+}
+
+#event div.title-header {
+  color: #1c86af;
+  font-size: 2.8em;
+  font-weight: 700;
+  margin: 30px;
+}
+
+#event div.title p.title-description {
+  color: #333;
+  font-size: 18.24px;
+  margin: 30px 0px;
+}
