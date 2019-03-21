@@ -163,7 +163,14 @@ theme = "timer-hugo"
     # flow Section
     [params.flow]
         enable  = true
-        # Image = "image/home/home1.png"
+        Timer = "image/home/timer.png"
+        arrow = "image/arrow.gif"
+        flow1 = "image/home/flow1.jpg"
+        flow2 = "image/home/flow2.jpg"
+        flow3 = "image/home/flow3.jpg"
+        flow4 = "image/home/flow4.jpg"
+        flow5 = "image/home/flow5.jpg"
+        flow6 = "image/home/flow6.jpg"
         heading = ""
         description = ""
         # btn     = true

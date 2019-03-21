@@ -219,3 +219,63 @@
   color: #333;
   font-size: 1.2em;
 }
+
+#flow div.timer {
+  margin-right: 20px;
+}
+
+#flow div.gray-box div.description {
+  min-height: 50px;
+}
+
+#flow div.gray-box {
+  background-color: #EEE;
+  min-height: 100px;
+  border-radius: 10px;
+  font-size: 1.1em;
+  margin: 0px 100px;
+  padding: 20px;
+}
+
+#flow div.flow-box {
+  margin: 50px 0px;
+}
+
+#flow div.flow-title {
+  font-weight: 700;
+  font-size: 1.7em;
+  margin-bottom: 20px;
+}
+
+#flow div.flow-title span {
+  background-color: #1c86af;
+  color: white;
+  padding: 5px 10px;
+}
+
+#flow div.flow-box div.flow-description {
+  min-height: 200px;
+}
+
+#flow div.flow-box div.flow-description div.image {
+  width: 25%;
+}
+
+#flow div.flow-box div.flow-description div.description {
+  margin-right: 50px;
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+#flow div.flow-box div.arrow {
+  margin: 30px 0px;
+}
+
+#flow div.conclusion {
+  margin: 50px 0px;
+}
+
+#flow div.conclusion p {
+  margin: 0px;
+  font-size: 1.3em;
+}
