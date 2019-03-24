@@ -32,7 +32,19 @@
     {{ "<!-- template main css file -->" | safeHTML }}
     <link rel="stylesheet" href="{{ "plugins/slider/slider.css" | absURL }}" media="screen">
     <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css">
-</head>
+    <script>
+    $(function(){
+      $('a[href^="#"]').click(function(){
+        var speed = 500;
+        var href= $(this).attr("href");
+        var target = $(href == "#" || href == "" ? 'html' : href);
+        var position = target.offset().top;
+        $("html, body").animate({scrollTop:position}, speed, "swing");
+        return false;
+      });
+    });
+    </script>
+  </head>
 
 <body>
 
