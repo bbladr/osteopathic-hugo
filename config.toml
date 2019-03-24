@@ -10,27 +10,27 @@ theme = "timer-hugo"
     # Navbar Menus
     [[menu.nav]]
         name    = "患者様の声"
-        url     = "/review"
+        url     = "#review"
         weight  = 2
     [[menu.nav]]
         name    = "施術の流れ"
-        url     = "/follow"
+        url     = "#flow"
         weight  = 3
     [[menu.nav]]
         name    = "選ばれる理由"
-        url     = "/reason"
+        url     = "#flow"
         weight  = 4
     [[menu.nav]]
         name    = "施術費用"
-        url     = "/cost"
+        url     = "#flow"
         weight  = 5
     [[menu.nav]]
         name    = "アクセス"
-        url     = "/access"
+        url     = "#flow"
         weight  = 6
     [[menu.nav]]
         name    = "診察予約"
-        url     = "/book"
+        url     = "#navigate"
         weight  = 7
 
 # Site Params
