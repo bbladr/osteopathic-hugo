@@ -7,6 +7,22 @@
   letter-spacing: 1px;
 }
 
+section.top-bar {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  color: #fff;
+  transition: all .2s ease-out 0s;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+  border-bottom: 1px solid #dedede;
+  z-index: 10;
+}
+
+#headline div.image {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
 
 #question div.q-box {
   background-color: white;
@@ -278,4 +294,9 @@
 #flow div.conclusion p {
   margin: 0px;
   font-size: 1.3em;
+}
+
+#footer {
+  background-color: #363839;
+  color: #CCC;
 }
