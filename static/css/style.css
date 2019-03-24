@@ -21,7 +21,7 @@ section.top-bar {
 
 #headline div.image {
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 #question div.q-box {
@@ -147,10 +147,6 @@ section.top-bar {
   font-size: 0.95em;
 }
 
-#profile div.description-upside {
-  width: 70%;
-}
-
 #profile div.description p{
   margin: 30px 0px;
 }
@@ -236,12 +232,9 @@ section.top-bar {
   font-size: 1.2em;
 }
 
-#flow div.timer {
-  margin-right: 20px;
-}
-
 #flow div.gray-box div.description {
   min-height: 50px;
+  font-size: 15.2px;
 }
 
 #flow div.gray-box {
@@ -269,18 +262,8 @@ section.top-bar {
   padding: 5px 10px;
 }
 
-#flow div.flow-box div.flow-description {
-  min-height: 200px;
-}
-
-#flow div.flow-box div.flow-description div.image {
-  width: 25%;
-}
-
 #flow div.flow-box div.flow-description div.description {
-  margin-right: 50px;
-  margin-bottom: 20px;
-  width: 70%;
+  margin-bottom: 10px;
 }
 
 #flow div.flow-box div.arrow {
