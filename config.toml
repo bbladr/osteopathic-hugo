@@ -1,6 +1,6 @@
-baseURL = "https://tatsumi-osteopathic-clinic.netlify.com/"
+baseURL = "https://midori-clinic.netlify.com/"
 languageCode = "en-us"
-title = "Tatsumi-clinic"
+title = "みどり接骨院"
 theme = "timer-hugo"
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
