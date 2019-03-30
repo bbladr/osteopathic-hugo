@@ -32,13 +32,13 @@ section.top-bar {
 #question p.q-title {
   font-weight: 700;
   font-size: 22.8px;
-  color: #1c86af;
+  color: #519548;
   padding: 20px;
   margin: 0px;
 }
 
 #question div.q-elem {
-  background-color: #EEE;
+  background-color: #eafde6;
   font-weight: 700;
   font-size: 15.2px;
   padding: 5px;
@@ -49,7 +49,7 @@ section.top-bar {
 #question div.q-elem span.q-mark {
   font-weight: 700;
   font-size: 20px;
-  color: #00b2c6;
+  color: #eafde6;
   margin: 15px 10px;
 }
 
