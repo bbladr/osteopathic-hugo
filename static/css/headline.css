@@ -1,0 +1,41 @@
+section#headline {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 230px 0;
+    color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+section#headline:before {
+    content: '';
+    z-index: 9;
+    background: rgba(255, 255, 255, 0.78);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+section#headline .block {
+    position: relative;
+    z-index: 10;
+}
+
+section#headline .block .body {
+    margin-top: 60px;
+}
+
+section#headline .block .body h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+section#headline .block .body p {
+    font-size: 1.3em;
+    color: var(--base-color);
+}

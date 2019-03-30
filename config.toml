@@ -57,7 +57,7 @@ theme = "timer-hugo"
     [params.headline]
         enable  = true
         bgImage = "image/home/bg-headline.jpg"
-        sentense = "image/home/sentense-headline.png"
+        welcome = "image/home/welcome.png"
         description = ""
         # btn     = true
         # btnText = ""
