@@ -29,6 +29,25 @@ section.top-bar {
   z-index: 1000;
 }
 
+.title-main {
+  color: var(--accent-color);
+  font-size: 2.8em;
+  font-weight: 700;
+  margin: 20px 150px;
+  border-bottom: Solid 1px #dddddd;
+}
+
+section:not(#header) .container  {
+  padding: 40px 0px;
+}
+
+
+
+
+
+
+
+
 #question div.q-box {
   background-color: white;
   border-radius: 10px;
@@ -68,11 +87,7 @@ section.top-bar {
 }
 
 #subheader div.title div.title-main {
-  color: #1c86af;
-  font-size: 2.8em;
-  font-weight: 700;
-  margin: 20px 150px;
-  border-bottom: Solid 1px #dddddd;
+
 }
 
 #subheader div.title p.title-description {

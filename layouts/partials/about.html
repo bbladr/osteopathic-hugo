@@ -1,17 +1,12 @@
 {{ if .Site.Params.about.enable }}
 {{ "<!-- About Section Start -->" | safeHTML }}
-<section id="about">
+<section id="about" style="background-color: #FFF;">
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="block wow fadeInLeft" data-wow-delay=".3s" data-wow-duration="500ms">
-                    {{ with .Site.Params.about.title }}<h2>{{ . }}</h2>{{ end }}
-                    {{ with .Site.Params.about.content }}<p>{{ . | safeHTML }}</p>{{ end }}
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="block wow fadeInRight" data-wow-delay=".3s" data-wow-duration="500ms">
-                    {{ with .Site.Params.about.image }}<img src="{{ . | absURL }}" alt="about-image">{{ end }}
+            <div class="col-md-12">
+                <div class="title text-center">
+                    <div class="title-main">当院について</div>
+                    <p class="title-description">治療の方針やアピールポイントを箇条書きなどで記述</p>
                 </div>
             </div>
         </div>

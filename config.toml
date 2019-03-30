@@ -59,15 +59,12 @@ theme = "timer-hugo"
         bgImage = "image/home/bg-headline.jpg"
         welcome = "image/home/welcome.png"
         description = ""
-        # btn     = true
-        # btnText = ""
-        # btnURL  = "https://themefisher.com/"
-        # [[params.banner.flipText]]
-        #     title   = "DESIGNER"
-        # [[params.banner.flipText]]
-        #     title   = "DEVELOPER"
-        # [[params.banner.flipText]]
-        #     title   = "FATHER"
+
+    # about Section
+    [params.about]
+        enable  = true
+        description = ""
+
     #
     # # question Section
     # [params.question]
