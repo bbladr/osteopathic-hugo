@@ -1,5 +1,5 @@
 {{ if .Site.Params.headline.enable }}
-{{ "<!-- Slider Section Start -->" | safeHTML }}
+{{ "<!-- Headline Section Start -->" | safeHTML }}
 <section id="headline" style='background-image: url("{{ .Site.Params.headline.bgImage | absURL }}");'>
   <div class="container">
     <div class="row">
@@ -19,7 +19,5 @@
     </div>
   </div>
 </section>
-{{ "<!-- Slider Section End -->" | safeHTML }}
+{{ "<!-- Headline Section End -->" | safeHTML }}
 {{ end }}
-
-<!-- original is banner.html -->

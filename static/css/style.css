@@ -4,6 +4,8 @@
 @import url(http://fonts.googleapis.com/css?family=Glegoo);
 */
 @import url("./headline.css");
+@import url("./about.css");
+@import url("./profile.css");
 
 :root {
   --accent-color: #5C9657;
@@ -41,11 +43,16 @@ section:not(#header) .container  {
   padding: 40px 0px;
 }
 
+.title {
+  margin-bottom: 40px;
+}
 
+footer {
+  background-color: #363839;
+  color: #CCC;
+}
 
-
-
-
+/* 
 
 
 #question div.q-box {
@@ -299,7 +306,4 @@ section:not(#header) .container  {
   font-size: 1.3em;
 }
 
-#footer {
-  background-color: #363839;
-  color: #CCC;
-}
+ */

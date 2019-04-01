@@ -65,6 +65,11 @@ theme = "timer-hugo"
         enable  = true
         description = ""
 
+    # profile Section
+    [params.profile]
+        enable  = true
+        Image = "image/home/profile.jpg"
+        description = ""
     #
     # # question Section
     # [params.question]

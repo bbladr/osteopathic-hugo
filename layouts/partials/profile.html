@@ -1,15 +1,15 @@
 {{ if .Site.Params.profile.enable }}
-{{ "<!-- Slider Section Start -->" | safeHTML }}
-<section id="profile" style='background-color: #EEE'>
+{{ "<!-- Profile Section Start -->" | safeHTML }}
+<section id="profile" style='background-color: #f0f0f0'>
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
                 <div class="title text-center">
                     <div class="title-main">院長プロフィール</div>
-                    <p class="title-description">私の想いをお伝えします。</p>
+                    <p>私の想いをお伝えします。</p>
                 </div>
             </div>
-            <div class="description col-md-9">
+            <div class="body col-md-9">
                 <strong>私は自分の施術を通し、病院や整骨院でその場しのぎの施術を受けてなかなか改善しない人や、どこに行っても改善しない人を助けていきたいという想いがあります。それがこの仕事のやりがいです。</strong>
                 <p>初めまして！私、整体院 寛千の院長、北原 寛千と申します。</p>
                 <p>学生時代は水泳に本腰を入れ、泳ぎまくっていました。そんな中、祖母の骨折を機にリハビリテーションに興味を持ち、夢は叶い、病院勤務のリハビリセラピストに。</p>
@@ -17,7 +17,7 @@
                 <p>骨折に対するリハビリはもちろんのこと、腰に対しても必至に治療をする毎日。しかし、どれだけ腰に治療をしても腰痛はなかなか改善していかなかったのです。それから必至に勉強を行い、私はついに、決定的とも言える痛み治療の根源に辿り着いたのです。それは…</p>
             </div>
             <div class="image col-md-3">
-                <img src="{{ .Site.Params.profile.Image }}">
+                <img src="{{ .Site.Params.profile.Image }}" width="100%">
             </div>
             <div class="description col-md-12">
                 <p class="emphasize"><strong>「痛みのある場所に原因はない」ということに。</strong></p>
@@ -28,7 +28,5 @@
         </div>
     </div>
 </section>
-{{ "<!-- Slider Section End -->" | safeHTML }}
+{{ "<!-- Profile Section End -->" | safeHTML }}
 {{ end }}
-
-<!-- original is banner.html -->

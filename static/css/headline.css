@@ -3,7 +3,7 @@ section#headline {
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 140px;
+    padding-top: 100px;
     color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -28,7 +28,7 @@ section#headline .block {
 section#headline .block .body h1 {
     font-size: 2.5em;
     font-weight: 700;
-    margin-top: 100px;
+    margin-top: 150px;
     color: var(--accent-color);
 }
 
