@@ -1,4 +1,4 @@
-baseURL = "https://midori-clinic.netlify.com/"
+baseURL = "https://midori-osteopathic-clinic.netlify.com/"
 languageCode = "en-us"
 title = "みどり接骨院"
 theme = "timer-hugo"
