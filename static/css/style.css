@@ -6,6 +6,7 @@
 @import url("./headline.css");
 @import url("./about.css");
 @import url("./profile.css");
+@import url("./access.css");
 
 :root {
   --accent-color: #5C9657;

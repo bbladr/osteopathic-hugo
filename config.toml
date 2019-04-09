@@ -70,6 +70,11 @@ theme = "timer-hugo"
         enable  = true
         Image = "image/home/profile.jpg"
         description = ""
+
+    # access Section
+    [params.access]
+        enable  = true
+        description = ""
     #
     # # question Section
     # [params.question]
