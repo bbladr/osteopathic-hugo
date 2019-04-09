@@ -44,8 +44,10 @@ theme = "timer-hugo"
 # Site Params
 [params]
     home = "ホーム"
+    # make logo at https://www.777logos.com/account/logos/concept/9270687/
     logo = "image/logo.png"
-    # phone = "image/phone-num.png"
+    # make telephone logo at https://www.777logos.com/account/logos/concept/9270714/
+    phone = "image/phone.png"
     dateFormat = "1 April 2019"
     # Meta data
     description = "Home page of midori osteopathic clinic"

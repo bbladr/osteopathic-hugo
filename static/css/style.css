@@ -32,6 +32,15 @@ section.top-bar {
   z-index: 1000;
 }
 
+#header a.nav-link {
+  position: relative;
+  top: 25%;
+}
+
+#header a.navbar-phone {
+  padding-left: 10px;
+}
+
 .title-main {
   color: var(--accent-color);
   font-size: 2.8em;

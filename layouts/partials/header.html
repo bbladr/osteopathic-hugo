@@ -32,7 +32,7 @@
 </head>
 
 <body>
-  <section  id="header" class="top-bar animated-header">
+  <section id="header" class="top-bar animated-header">
     <div class="container">
       <div class="row">
         <div class="col-lg-12">
@@ -54,6 +54,11 @@
                     <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                   </li>
                 {{ end }}
+                <li class="nav-item">
+                  <a class="navbar-phone" href="tel:0471112752">
+                    <img src="{{ .Site.Params.phone | absURL }}" alt="telephone">
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
