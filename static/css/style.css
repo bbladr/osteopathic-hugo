@@ -9,8 +9,8 @@
 @import url("./access.css");
 
 :root {
-  --accent-color: #5C9657;
-  --light-coloe: #FDB771;
+  --accent-color: rgb(77, 156, 68);
+  --light-color: #FDB771;
   --medium-color: #FF492D;
   --bitter-color: #DA2723;
   --base-color: #111C16;

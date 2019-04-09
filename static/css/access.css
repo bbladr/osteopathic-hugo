@@ -1,3 +1,31 @@
 section#access {
   margin: 0px;
 }
+
+section#access div.nav-title {
+  font-size: 1.2em;
+}
+
+section#access div.nav-title span {
+  color: #FFF;
+  background-color: var(--light-color);
+  margin-right: 5px;
+  padding: 0px 10px;
+  font-weight: 700;
+}
+
+section#access div.nav-image {
+  margin: 20px 0px;
+}
+
+section#access div.arrow {
+  margin: 20px 0px;
+}
+
+section#access div.map-box {
+  padding-left: 50px;
+}
+
+section#access div.map-box div.how {
+  margin: 20px 0px;
+}

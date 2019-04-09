@@ -74,6 +74,12 @@ theme = "timer-hugo"
     # access Section
     [params.access]
         enable  = true
+        nav1 = "image/nav/1.jpg"
+        nav2 = "image/nav/2.jpg"
+        nav3 = "image/nav/3.jpg"
+        nav4 = "image/nav/4.jpg"
+        nav5 = "image/nav/5.jpg"
+        arrow = "image/arrow.gif"
         description = ""
     #
     # # question Section
