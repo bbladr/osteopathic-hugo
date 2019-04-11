@@ -58,7 +58,7 @@ theme = "timer-hugo"
     # headline Section
     [params.headline]
         enable  = true
-        bgImage = "image/home/bg-headline.jpg"
+        bgImage = "image/bg-headline.jpg"
         welcome = "image/home/welcome.png"
         description = ""
 
