@@ -8,38 +8,26 @@ theme = "timer-hugo"
 # Site Menus
 [menu]
     # Navbar Menus
-    # [[menu.nav]]
-    #     name    = "患者様の声"
-    #     url     = "#review"
-    #     weight  = 2
     [[menu.nav]]
         name    = "当院について"
         url     = "#about"
         weight  = 2
-    # [[menu.nav]]
-    #     name    = "施術の流れ"
-    #     url     = "#flow"
-    #     weight  = 3
-    # [[menu.nav]]
-    #     name    = "選ばれる理由"
-    #     url     = "#flow"
-    #     weight  = 4
     [[menu.nav]]
         name    = "スタッフ"
         url     = "#profile"
         weight  = 3
-    [[menu.nav]]
-        name    = "施術費用"
-        url     = "#cost"
-        weight  = 5
+    # [[menu.nav]]
+    #     name    = "施術費用"
+    #     url     = "#cost"
+    #     weight  = 4
     [[menu.nav]]
         name    = "アクセス"
         url     = "#access"
-        weight  = 6
+        weight  = 5
     # [[menu.nav]]
     #     name    = "診察予約"
     #     url     = "#reservartion"
-    #     weight  = 7
+    #     weight  = 6
 
 # Site Params
 [params]
@@ -70,6 +58,7 @@ theme = "timer-hugo"
         image3 = "image/image/3.jpg"
         image4 = "image/image/4.jpg"
         image5 = "image/image/5.jpg"
+        coupon = "image/coupon.png"
         description = ""
 
     # profile Section
@@ -89,210 +78,4 @@ theme = "timer-hugo"
         nav5 = "image/nav/5.jpg"
         arrow = "image/arrow.gif"
         description = ""
-    #
-    # # question Section
-    # [params.question]
-    #     enable  = true
-    #     # Image = "image/home/home1.png"
-    #     heading = ""
-    #     description = ""
-    #     # btn     = true
-    #     # btnText = ""
-    #     # btnURL  = "https://themefisher.com/"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DESIGNER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DEVELOPER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "FATHER"
-    #
-    # # subheader Section
-    # [params.subheader]
-    #     enable  = true
-    #     Image = "image/image1.png"
-    #     heading = ""
-    #     description = ""
-    #     # btn     = true
-    #     # btnText = ""
-    #     # btnURL  = "https://themefisher.com/"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DESIGNER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DEVELOPER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "FATHER"
-    #
-    # # review Section
-    # [params.review]
-    #     enable  = true
-    #     # Image = "image/image1.png"
-    #     heading = ""
-    #     description = ""
-    #     # btn     = true
-    #     # btnText = ""
-    #     # btnURL  = "https://themefisher.com/"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DESIGNER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DEVELOPER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "FATHER"
-    #
-    # # profile Section
-    # [params.profile]
-    #     enable  = true
-    #     Image = "image/profile.jpg"
-    #     heading = ""
-    #     description = ""
-    #     # btn     = true
-    #     # btnText = ""
-    #     # btnURL  = "https://themefisher.com/"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DESIGNER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DEVELOPER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "FATHER"
-    #
-    # # event Section
-    # [params.event]
-    #     enable  = true
-    #     # Image = "image/profile.jpg"
-    #     heading = ""
-    #     description = ""
-    #     # btn     = true
-    #     # btnText = ""
-    #     # btnURL  = "https://themefisher.com/"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DESIGNER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DEVELOPER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "FATHER"
-    #
-    # # navigate Section
-    # [params.navigate]
-    #     enable  = true
-    #     Image1 = "image/home/home2.png"
-    #     Image2 = "image/home/home3.png"
-    #     Image3 = "image/home/home4.png"
-    #     Image4 = "image/home/home5.png"
-    #     heading = ""
-    #     description = ""
-    #     # btn     = true
-    #     # btnText = ""
-    #     # btnURL  = "https://themefisher.com/"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DESIGNER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DEVELOPER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "FATHER"
-    #
-    # # flow Section
-    # [params.flow]
-    #     enable  = true
-    #     Timer = "image/home/timer.png"
-    #     arrow = "image/arrow.gif"
-    #     flow1 = "image/home/flow1.jpg"
-    #     flow2 = "image/home/flow2.jpg"
-    #     flow3 = "image/home/flow3.jpg"
-    #     flow4 = "image/home/flow4.jpg"
-    #     flow5 = "image/home/flow5.jpg"
-    #     flow6 = "image/home/flow6.jpg"
-    #     heading = ""
-    #     description = ""
-    #     # btn     = true
-    #     # btnText = ""
-    #     # btnURL  = "https://themefisher.com/"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DESIGNER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "DEVELOPER"
-    #     # [[params.banner.flipText]]
-    #     #     title   = "FATHER"
-    #
-    # # reason Section
-    # [params.reason]
-    #     enable  = true
-    #     # Image = "image/profile.jpg"
-    #     heading = ""
-    #     description = ""
-    #
-    # # cost Section
-    # [params.cost]
-    #     enable  = true
-    #     # Image = "image/profile.jpg"
-    #     heading = ""
-    #     description = ""
-    #
-    # # assurance Section
-    # [params.assurance]
-    #     enable  = true
-    #     # Image = "image/profile.jpg"
-    #     heading = ""
-    #     description = ""
-    #
-    # # access Section
-    # [params.access]
-    #     enable  = true
-    #     # Image = "image/profile.jpg"
-    #     heading = ""
-    #     description = ""
-    #
-    # # route Section
-    # [params.route]
-    #     enable  = true
-    #     # Image = "image/profile.jpg"
-    #     heading = ""
-    #     description = ""
-    #
-    # # footer Section
-    # [params.footer]
-    #     enable  = true
-    #     # Image = "image/profile.jpg"
-    #     heading = ""
-    #     description = ""
-    #
-    # # Banner Section
-    # [params.banner]
-    #     enable  = true
-    #     Image = "image/home/home1.png"
-    #     heading = ""
-    #     description = ""
-    #     btn     = true
-    #     btnText = ""
-    #     btnURL  = "https://themefisher.com/"
-    #     [[params.banner.flipText]]
-    #         title   = "DESIGNER"
-    #     [[params.banner.flipText]]
-    #         title   = "DEVELOPER"
-    #     [[params.banner.flipText]]
-    #         title   = "FATHER"
-    #
-    # # Homepage About Section
-    # [params.about]
-    #     enable  = true
-    #     title   = "ABOUT ME"
-    #     content = "Hello, I’m a UI/UX Designer & Front End Developer from Victoria, Australia. I hold a master degree of Web Design from the World University.And scrambled it to make a type specimen book. It has survived not only five centuries. <br> <br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, adipisci voluptatum repudiandae, natus impedit repellat aut officia illum at assumenda iusto reiciendis placeat. Temporibus, vero."
-    #     image   = "images/about/about.jpg"
-    #
-    # # Call to Action
-    # [params.cta]
-    #     enable  = true
-    #     title   = "SO WHAT YOU THINK ?"
-    #     content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,<br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium."
-    #     btnText = "Contact with me"
-    #     btnURL  = "/contact"
-    #
-    # # Portfolio Section On Homepage
-    # [params.portfolio]
-    #     enable  = true
-    #     title   = "Latest Works"
-    #     subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
-    #
-    # # Feature Product Section
-    # [params.featureProduct]
-    #     enable  = true
-    #     title   = "SOME OF OUR FEATURES WORKS"
-    #     subtitle= "Aliquam lobortis. Maecenas vestibulum mollis diam. Pellentesque auctor neque nec urna. Nulla sit amet est. Aenean posuere <br> tortor sed cursus feugiat, nunc augue blandit nunc, eu sollicitudin urna dolor sagittis lacus."
+    
