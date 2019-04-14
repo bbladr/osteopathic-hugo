@@ -61,6 +61,16 @@
     ga('create', '{{ .Site.Params.googleAnalitycsID }}', 'auto');
     ga('send', 'pageview');
 </script>
+<script>
+$('.slider').slick({
+    autoplay:true,
+    autoplaySpeed:5000,
+    infinite:true,
+    // FontAwesomeのクラスを追加
+    prevArrow: '<div class="slider-arrow slider-prev fa fa-angle-left"></div>',
+    nextArrow: '<div class="slider-arrow slider-next fa fa-angle-right"></div>',
+});
+</script>
 </body>
 
 </html>

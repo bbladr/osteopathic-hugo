@@ -65,6 +65,11 @@ theme = "timer-hugo"
     # about Section
     [params.about]
         enable  = true
+        image1 = "image/image/1.jpg"
+        image2 = "image/image/2.jpg"
+        image3 = "image/image/3.jpg"
+        image4 = "image/image/4.jpg"
+        image5 = "image/image/5.jpg"
         description = ""
 
     # profile Section
