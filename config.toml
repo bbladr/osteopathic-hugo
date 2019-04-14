@@ -70,8 +70,8 @@ theme = "timer-hugo"
     # profile Section
     [params.profile]
         enable  = true
-        ryu = "image/ryu.png"
-        hiromi = "image/hiromi.png"
+        ryu = "image/ryu.png" # 750*1000
+        hiromi = "image/hiromi.png" # 750*1000
         description = ""
 
     # access Section

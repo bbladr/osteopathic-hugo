@@ -50,7 +50,7 @@ section.top-bar {
 }
 
 section:not(#header) .container  {
-  padding: 40px 0px;
+  padding: 60px 0px;
 }
 
 .title {
