@@ -18,7 +18,7 @@ theme = "timer-hugo"
         weight  = 3
     # [[menu.nav]]
     #     name    = "施術費用"
-    #     url     = "#cost"
+    #     url     = "/cost"
     #     weight  = 4
     [[menu.nav]]
         name    = "アクセス"
