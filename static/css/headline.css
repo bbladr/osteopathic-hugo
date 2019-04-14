@@ -28,17 +28,36 @@ section#headline .block {
 section#headline .block .body h1 {
     font-size: 2.5em;
     font-weight: 700;
-    margin-top: 150px;
+    margin-top: 60px;
     color: var(--accent-color);
 }
 
 section#headline .block .body p {
     font-size: 1.3em;
-    color: var(--base-color);
+    color: var(--dark);
+}
+
+section#headline .block .body .news-box {
+    padding: 20px;
+    background-color: rgba( 230, 230, 230, 0.4 );
+}
+
+section#headline .block .body .news-box strong {
+    color: var(--dark);
+    font-size: 1.1em;
+}
+
+section#headline .block .body .news-box .topic {
+    color: var(--dark);
+    font-size: 1em;
+}
+
+section#headline .block .body .news-box .topic span {
+    padding-right: 10px;
 }
 
 section#headline .block .body .line-add {
     font-size: 1.7em;
     padding: 20px 0px;
-    color: var(--base-color);
+    color: var(--dark);
 }
