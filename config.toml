@@ -26,7 +26,7 @@ theme = "timer-hugo"
     #     weight  = 4
     [[menu.nav]]
         name    = "スタッフ"
-        url     = "#member"
+        url     = "#profile"
         weight  = 3
     [[menu.nav]]
         name    = "施術費用"
@@ -36,10 +36,10 @@ theme = "timer-hugo"
         name    = "アクセス"
         url     = "#access"
         weight  = 6
-    [[menu.nav]]
-        name    = "診察予約"
-        url     = "#reservartion"
-        weight  = 7
+    # [[menu.nav]]
+    #     name    = "診察予約"
+    #     url     = "#reservartion"
+    #     weight  = 7
 
 # Site Params
 [params]
@@ -70,7 +70,8 @@ theme = "timer-hugo"
     # profile Section
     [params.profile]
         enable  = true
-        Image = "image/home/profile.jpg"
+        ryu = "image/ryu.png"
+        hiromi = "image/hiromi.png"
         description = ""
 
     # access Section

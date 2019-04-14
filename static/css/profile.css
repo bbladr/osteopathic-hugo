@@ -1,0 +1,11 @@
+section#profile .body .position {
+  font-size: 1.3em;
+}
+
+section#profile .body .name {
+  font-size: 1.7em;
+}
+
+section#profile .body .staff {
+  padding-left: 100px;
+}
