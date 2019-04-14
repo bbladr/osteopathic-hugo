@@ -63,7 +63,7 @@ section#headline .block .body .line-add {
 }
 
 @media only screen and (max-width: 750px) {
-    .pc {
-        display: hidden;
+    section#headline .mobile {
+        display: none;
     }
 }
