@@ -1,6 +1,6 @@
 baseURL = "https://midori-osteopathic-clinic.netlify.com/"
 languageCode = "en-us"
-title = "みどり接骨院"
+title = "みどり整骨院"
 theme = "timer-hugo"
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
