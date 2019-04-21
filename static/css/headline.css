@@ -76,3 +76,10 @@
         margin-bottom: 20px; 
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    #headline .block .body h1 {
+        font-size: 2em;
+    }
+    
+}

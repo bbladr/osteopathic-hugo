@@ -33,9 +33,9 @@ theme = "timer-hugo"
 [params]
     home = "ホーム"
     # make logo at https://www.777logos.com/account/logos/concept/9270687/
-    logo = "image/logo.png"
+    logo = "images/logo.png"
     # make telephone logo at https://www.777logos.com/account/logos/concept/9270714/
-    phone = "image/phone.png"
+    phone = "images/phone.png"
     dateFormat = "1 April 2019"
     # Meta data
     description = "Home page of midori osteopathic clinic"
@@ -46,36 +46,36 @@ theme = "timer-hugo"
     # headline Section
     [params.headline]
         enable  = true
-        bgImage = "image/bg-headline.png"
-        welcome = "image/home/welcome.png"
+        bgImage = "images/bg-headline.png"
+        welcome = "images/home/welcome.png"
         description = ""
 
     # about Section
     [params.about]
         enable  = true
-        image1 = "image/image/1.jpg"
-        image2 = "image/image/2.jpg"
-        image3 = "image/image/3.jpg"
-        image4 = "image/image/4.jpg"
-        image5 = "image/image/5.jpg"
-        coupon = "image/coupon.png"
+        image1 = "images/image/1.jpg"
+        image2 = "images/image/2.jpg"
+        image3 = "images/image/3.jpg"
+        image4 = "images/image/4.jpg"
+        image5 = "images/image/5.jpg"
+        coupon = "images/coupon.png"
         description = ""
 
     # profile Section
     [params.profile]
         enable  = true
-        ryu = "image/ryu.png" # 750*1000
-        hiromi = "image/hiromi.png" # 750*1000
+        ryu = "images/ryu.png" # 750*1000
+        hiromi = "images/hiromi.png" # 750*1000
         description = ""
 
     # access Section
     [params.access]
         enable  = true
-        nav1 = "image/nav/1.jpg"
-        nav2 = "image/nav/2.jpg"
-        nav3 = "image/nav/3.jpg"
-        nav4 = "image/nav/4.jpg"
-        nav5 = "image/nav/5.jpg"
-        arrow = "image/arrow.gif"
+        nav1 = "images/nav/1.jpg"
+        nav2 = "images/nav/2.jpg"
+        nav3 = "images/nav/3.jpg"
+        nav4 = "images/nav/4.jpg"
+        nav5 = "images/nav/5.jpg"
+        arrow = "images/arrow.gif"
         description = ""
     
