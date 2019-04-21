@@ -44,6 +44,14 @@ section.top-bar {
   padding-left: 10px;
 }
 
+section:not(#header) .container  {
+  padding: 60px 0px;
+}
+
+.title {
+  margin-bottom: 40px;
+}
+
 .title-main {
   color: var(--accent-color);
   font-size: 2.8em;
@@ -56,19 +64,13 @@ section.top-bar {
   font-size:1.2em;
 }
 
-section:not(#header) .container  {
-  padding: 60px 0px;
-}
-
-.title {
-  margin-bottom: 40px;
-}
-
 footer {
-  background-color: #363839;
+  background-color: var(--dark);
+}
+
+footer .copyright, .sns-link {
   color: #CCC;
 }
-
 /* slider style */
 .slider{
     margin: 40px auto;
@@ -96,26 +98,26 @@ footer {
   right: -20px;
 }
 
+/* responsive */
 .mobile {
   display: none;
 }
 
 @media only screen and (max-width: 750px) {
+  .mobile {
+    display: inline;
+  }
+
   .mobile-hidden {
     display: none;
   }
   
-  .navbar-brand.mobile-adjust {
+  .navbar-brand {
     max-width: 70%;
-  }
-
-  .nav-item.mobile {
-    display: inline;
   }
 
   .title-main {
     margin: 0px 20px;
     font-size: 2.0em;
   }
-
 }
