@@ -1,0 +1,16 @@
+{{ partial "header.html" . }}
+
+{{ if .Site.Data.service.enable }}
+{{ "<!-- Service Section Start -->" | safeHTML }}
+<section id="service-page" class="pages service-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+    </div>
+</section>
+{{ "<!-- Service Section End -->" | safeHTML }}
+{{ end }}
+
+{{ partial "footer.html" . }}
