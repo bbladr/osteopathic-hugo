@@ -17,8 +17,9 @@
   letter-spacing: 1px;
 }
 
-.row {
+container .row {
   width: 100%;
+  margin-right: 0px;
 }
 
 section.top-bar {
@@ -99,6 +100,10 @@ footer {
 }
 
 @media only screen and (max-width: 750px) {
+  .mobile-hidden {
+    display: none;
+  }
+  
   .navbar-brand.mobile-adjust {
     max-width: 70%;
   }
@@ -106,7 +111,5 @@ footer {
   .nav-item.mobile {
     display: inline;
   }
-  .mobile-hidden {
-    display: none;
-  }
+
 }
