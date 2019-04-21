@@ -47,7 +47,7 @@ theme = "timer-hugo"
     [params.headline]
         enable  = true
         bgImage = "images/bg-headline.png"
-        welcome = "images/home/welcome.png"
+        welcome = "images/welcome.png"
         description = ""
 
     # about Section
@@ -64,8 +64,8 @@ theme = "timer-hugo"
     # profile Section
     [params.profile]
         enable  = true
-        ryu = "images/ryu.png" # 750*1000
-        hiromi = "images/hiromi.png" # 750*1000
+        ryu = "images/profile/ryu.png" # 750*1000
+        hiromi = "images/profile/hiromi.png" # 750*1000
         description = ""
 
     # access Section
