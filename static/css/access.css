@@ -29,3 +29,16 @@ section#access div.map-box {
 section#access div.map-box div.data {
   margin: 20px 0px;
 }
+
+iframe {
+  width: 520px;
+  height: 360px;
+}
+
+@media only screen and (max-width: 750px) {
+  iframe {
+    width: 300px;
+    height: 300px;
+  }
+
+}

@@ -17,6 +17,10 @@
   letter-spacing: 1px;
 }
 
+.row {
+  width: 100%;
+}
+
 section.top-bar {
   position: fixed;
   top: 0px;
