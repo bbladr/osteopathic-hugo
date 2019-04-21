@@ -39,11 +39,11 @@
       <div class="row">
         <div class="col-lg-12">
           <nav class="navbar navbar-expand-lg navbar-light bg-white">
-            <a class="navbar-brand" href="{{ .Site.BaseURL }}">
-              <img src="{{ .Site.Params.logo | absURL }}" alt="logo">
+            <a class="navbar-brand mobile-adjust" href="{{ .Site.BaseURL }}">
+              <img src="{{ .Site.Params.logo | absURL }}" alt="logo" width="100%">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-              aria-expanded="false" aria-label="Toggle navigation">
+              aria-expanded="false" aria-label="Toggle navigation" onBlur="testscript();">
               <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -56,9 +56,14 @@
                     <a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
                   </li>
                 {{ end }}
-                <li class="nav-item">
+                <li class="nav-item mobile-hidden">
                   <a class="navbar-phone" href="tel:0471112752">
                     <img src="{{ .Site.Params.phone | absURL }}" alt="telephone">
+                  </a>
+                </li>
+                <li class="nav-item mobile">
+                  <a class="nav-link" data-toggle="collapse" href="#navbarSupportedContent" role="button" aria-expanded="false" aria-controls="navbarSupportedContent">
+                    閉じる
                   </a>
                 </li>
               </ul>
