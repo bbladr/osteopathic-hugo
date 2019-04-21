@@ -17,8 +17,8 @@
   letter-spacing: 1px;
 }
 
-container .row {
-  width: 100%;
+.container .row {
+  width: auto;
   margin-right: 0px;
 }
 
