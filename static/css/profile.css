@@ -1,5 +1,5 @@
 section#profile .body .position {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 section#profile .body .name {
@@ -9,4 +9,26 @@ section#profile .body .name {
 section#profile .body .staff {
   padding-left: 100px;
   margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 750px) {
+  section#profile .body .staff {
+    padding: 0px 25px;
+  margin-bottom: 0px;
+}
+
+  section#profile .body .staff .image {
+    text-align: center;
+    padding: 20px 0px;
+  }
+
+  section#profile .body .staff .image img {
+    width: 70%;
+  }
+
+  section#profile .body .position {
+    margin-bottom: -5px;
+    font-weight: 400;
+    font-size: 1.3em;
+  }
 }

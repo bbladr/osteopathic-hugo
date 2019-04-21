@@ -1,4 +1,4 @@
-section#headline {
+#headline {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -9,7 +9,7 @@ section#headline {
     position: relative;
 }
 
-section#headline:before {
+#headline:before {
     content: '';
     z-index: 9;
     background: rgba(255, 255, 255, 0.78);
@@ -20,58 +20,58 @@ section#headline:before {
     bottom: 0;
 }
 
-section#headline .block {
+#headline .block {
     position: relative;
     z-index: 10;
 }
 
-section#headline .block .welcome img {
+#headline .block .welcome img {
     margin-top: 0px; 
 }
 
-section#headline .block .body h1 {
+#headline .block .body h1 {
     font-size: 2.5em;
     font-weight: 700;
     margin-top: 60px;
     color: var(--accent-color);
 }
 
-section#headline .block .body p {
+#headline .block .body p {
     font-size: 1.3em;
 }
 
-section#headline .block .body .line-add {
+#headline .block .body .line-add {
     font-size: 1.5em;
     padding-bottom: 20px;
 }
 
-section#headline .block .body .news-box {
+#headline .block .body .news-box {
     padding: 20px;
     background-color: rgba( 230, 230, 230, 0.4 );
 }
 
-section#headline .block .body .news-box strong {
+#headline .block .body .news-box strong {
     font-size: 1.1em;
 }
 
-section#headline .block .body .news-box .topic {
+#headline .block .body .news-box .topic {
     font-size: 1em;
 }
 
-section#headline .block .body .news-box .topic u {
+#headline .block .body .news-box .topic u {
     padding-right: 10px;
 }
 
 @media only screen and (max-width: 750px) {
-    section#headline .block .body p {
+    #headline .block .body p {
         font-size: 1.1em;
     }
 
-    section#headline {
+    #headline {
         padding-top: 60px; 
     }
 
-    section#headline .welcome img {
+    #headline .welcome img {
         width: 80%;
         margin-bottom: 20px; 
     }

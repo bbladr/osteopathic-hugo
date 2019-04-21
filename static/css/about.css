@@ -1,21 +1,61 @@
-section#about .body .terms {
+#about .body .terms {
   margin-bottom: 30px;
 }
 
-section#about .body span {
+#about .body span {
   font-size: 1.5em;
   margin: 0px 10px;
 }
 
-section#about .body p {
+#about .body p {
   font-size: 1.3em;
 }
 
-section#about .body .comment {
+#about .mobile {
+  display: none;
+}
+
+#about .body .comment {
   font-size: 1.3em;
   font-weight: 700;
 }
 
-section#about .body .coupon {
+#about .slider-arrow {
+  font-size: 3em;
+}
+#about .body .coupon {
   border: solid 1px #ddd;
+}
+
+@media only screen and (max-width: 750px) {
+  #about .body span {
+    font-size: 1.3em;
+    margin: 5px 10px;
+  }
+
+  #about .mobile {
+    display: block;
+    margin: 20px 0px;
+    padding-right: 40px;
+    width: 100%; 
+  }
+
+  #about .mobile .slider-arrow {
+    position: absolute;
+    top: 45%;
+    font-size: 2em;
+    z-index: 10;  /* 重要 */
+  }
+  
+  #about .mobile .slider-prev {
+    left: 0px;
+  }
+  
+  #about .mobile .slider-next {
+    right: 0px;
+  }
+
+  #about .slider.mobile-hidden {
+    display: none;
+  }
 }
