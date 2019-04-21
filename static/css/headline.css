@@ -25,6 +25,10 @@ section#headline .block {
     z-index: 10;
 }
 
+section#headline .block .welcome img {
+    margin-top: 0px; 
+}
+
 section#headline .block .body h1 {
     font-size: 2.5em;
     font-weight: 700;
@@ -34,7 +38,11 @@ section#headline .block .body h1 {
 
 section#headline .block .body p {
     font-size: 1.3em;
-    color: var(--dark);
+}
+
+section#headline .block .body .line-add {
+    font-size: 1.5em;
+    padding-bottom: 20px;
 }
 
 section#headline .block .body .news-box {
@@ -43,27 +51,15 @@ section#headline .block .body .news-box {
 }
 
 section#headline .block .body .news-box strong {
-    color: var(--dark);
     font-size: 1.1em;
 }
 
 section#headline .block .body .news-box .topic {
-    color: var(--dark);
     font-size: 1em;
 }
 
 section#headline .block .body .news-box .topic u {
     padding-right: 10px;
-}
-
-section#headline .block .body .line-add {
-    font-size: 1.5em;
-    padding-bottom: 20px;
-    color: var(--dark);
-}
-
-section#headline .welcome img {
-    margin-top: 0px; 
 }
 
 @media only screen and (max-width: 750px) {
@@ -72,7 +68,7 @@ section#headline .welcome img {
     }
 
     section#headline {
-        padding-top: 70px; 
+        padding-top: 60px; 
     }
 
     section#headline .welcome img {
