@@ -28,11 +28,13 @@
 #headline .block .welcome img {
     margin-top: 0px; 
 }
+#headline .block .body {
+    margin-top: 60px;
+}
 
 #headline .block .body h1 {
     font-size: 2.5em;
     font-weight: 700;
-    margin-top: 60px;
     color: var(--accent-color);
 }
 
@@ -47,6 +49,7 @@
 
 #headline .block .body .news-box {
     padding: 20px;
+    width: 700px;
     background-color: rgba(230, 230, 230, 0.4);
 }
 
@@ -56,8 +59,12 @@
 
 #headline .block .body .news-box .topic {
     font-size: 1em;
-    height: 400px;
+    height: 100px;
     overflow-y: scroll;
+}
+
+#headline .block .body .news-box .topic .detail {
+    padding: 3px 15px;
 }
 
 #headline .block .body .news-box .topic u {
