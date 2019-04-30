@@ -1,4 +1,5 @@
 #headline {
+    background-image: url("../images/bg-headline.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -81,8 +82,8 @@
     }
 
     #headline {
+        background-image: url("../images/bg-headline-mobile.png");
         padding-top: 0px; 
-        background-size: auto 100%;
     }
 
     #headline .welcome img {
