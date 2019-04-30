@@ -1,6 +1,6 @@
 {{ if .Site.Params.headline.enable }}
 {{ "<!-- Headline Section Start -->" | safeHTML }}
-<section id="headline">
+<section id="headline" style='background-image: url("{{ .Site.Params.headline.bgImage | absURL }}") center top no-repeat;'>
   <div class="container">
     <div class="block wow fadeInUp" data-wow-delay=".3s">
       <div class="row text-center">
