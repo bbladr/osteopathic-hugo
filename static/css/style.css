@@ -27,7 +27,7 @@ section.top-bar {
   position: fixed;
   top: 0px;
   width: 100%;
-  max-height: 85px;
+  height: 80px;
   background: #fff;
   color: #fff;
   transition: all .2s ease-out 0s;
@@ -106,22 +106,68 @@ footer .copyright, .sns-link {
 }
 
 @media only screen and (max-width: 750px) {
-  #header .container {
-    padding: 0px;
-    margin: 0px;
-    max-width: 100%;
-  }
-
   #header .mobile-width {
     padding: 0px;
   }
 
   section.top-bar {
-  max-height: 70px;
-}
+    height: 65px;
+  }
 
   .mobile {
     display: inline;
+  }
+
+  .mobile-hidden {
+    display: none;
+  }
+  
+  .navbar-brand {
+    max-width: 70%;
+    max-height: 40px;
+  }
+
+  .title-main {
+    margin: 0px 20px;
+    font-size: 2.0em;
+  }
+
+  .bottom-bar {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background: #fff;
+    color: #fff;
+    transition: all .2s ease-out 0s;
+    box-shadow: 0 0 10px 0 rgba(0,0,0,.1);
+    border-top: 1px solid #dedede;
+    z-index: 1000;
+    padding: 5px 0px;
+  }
+
+  footer {
+    margin-bottom: 60px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  #header .mobile-width {
+    padding: 0px;
+  }
+
+  div.container {
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .mobile {
+    display: inline;
+  }
+
+  section:not(#header) .container  {
+    padding: 60px 40px;
   }
 
   .mobile-hidden {
@@ -149,9 +195,5 @@ footer .copyright, .sns-link {
     border-top: 1px solid #dedede;
     z-index: 1000;
     padding: 5px 0px;
-  }
-
-  footer {
-    margin-bottom: 60px;
   }
 }
