@@ -82,6 +82,7 @@
 
     #headline {
         padding-top: 0px; 
+        background-size: cover;
     }
 
     #headline .welcome img {
