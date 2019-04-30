@@ -1,5 +1,4 @@
 #headline {
-    background-image: url("../images/bg-headline.png");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -82,7 +81,7 @@
     }
 
     #headline {
-        background: url("../images/bg-headline.png") center top no-repeat;
+        background-position: center top;
         background-size: auto 100%;
         padding-top: 0px; 
     }
