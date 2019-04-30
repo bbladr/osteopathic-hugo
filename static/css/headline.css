@@ -76,13 +76,21 @@
         font-size: 1.1em;
     }
 
+    #headline .block .body {
+        margin-top: 0px;
+    }
+
     #headline {
-        padding-top: 60px; 
+        padding-top: 0px; 
     }
 
     #headline .welcome img {
         width: 80%;
         margin-bottom: 20px; 
+    }
+
+    #headline .block .body .news-box {
+        width: 100%; 
     }
 }
 
