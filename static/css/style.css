@@ -110,6 +110,10 @@ footer .copyright, .sns-link {
     padding: 0px;
   }
 
+  #header div.container {
+    padding: 0px;
+  }
+
   section.top-bar {
     height: 65px;
   }
