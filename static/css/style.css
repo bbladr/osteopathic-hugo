@@ -27,7 +27,7 @@ section.top-bar {
   position: fixed;
   top: 0px;
   width: 100%;
-  height: 80px;
+  height: 85px;
   background: #fff;
   color: #fff;
   transition: all .2s ease-out 0s;
