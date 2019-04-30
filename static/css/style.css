@@ -121,7 +121,11 @@ footer .copyright, .sns-link {
   .mobile-hidden {
     display: none;
   }
-  
+
+  section:not(#header) div.container  {
+    padding: 60px 0px;
+  }
+
   .navbar-brand {
     max-width: 70%;
     max-height: 40px;
