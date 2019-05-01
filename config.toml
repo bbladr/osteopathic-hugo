@@ -46,7 +46,7 @@ theme = "timer-hugo"
     # headline Section
     [params.headline]
         enable  = true
-        welcome = "images/welcome.png"
+        welcome = "images/headline.png"
         description = ""
 
     # about Section
