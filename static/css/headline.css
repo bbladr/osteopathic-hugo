@@ -25,10 +25,7 @@
     position: relative;
     z-index: 10;
 }
-
-#headline .block .welcome img {
-    margin-top: 60px; 
-}
+/* 
 #headline .block .body {
     margin-top: 60px;
 }
@@ -46,7 +43,7 @@
 #headline .block .body .line-add {
     font-size: 1.5em;
     padding-bottom: 20px;
-}
+} */
 
 #headline .block .body .news-box {
     padding: 20px;
