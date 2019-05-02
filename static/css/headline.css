@@ -1,14 +1,13 @@
 #headline {
-    /* background-image: url("../images/bg-headline.png"); */
-    /* background-repeat: no-repeat; */
-    /* background-position: center center; */
-    /* background-size: cover; */
-    /* background-attachment: fixed; */
-    /* padding-top: 100px; */
+    background-image: url("../images/bg-headline.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 100px;
     color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     position: relative;
-    background: rgb(229, 250, 196);
 }
 
 #headline:before {
@@ -83,9 +82,8 @@
     }
 
     #headline {
-        /* background: url("../images/bg-headline.png") center top no-repeat; */
-        /* background-size: auto 100%; */
-        background: #fff;
+        background: url("../images/bg-headline.png") center top no-repeat;
+        background-size: auto 100%;
         padding-top: 0px; 
     }
 
