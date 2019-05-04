@@ -11,6 +11,13 @@
   font-size: 1.3em;
 }
 
+#about .time-box {
+background-color: #eee;
+border-radius: 0.5rem;
+padding: 10px 15px;
+font-size: 1.1em;
+}
+
 #about .mobile {
   display: none;
 }
