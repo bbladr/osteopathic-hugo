@@ -31,6 +31,10 @@ margin-bottom: 20px;
   border: solid 1px #ddd;
 }
 
+#about .slider.mobile.tablet {
+  display: none;
+}
+
 @media only screen and (max-width: 450px) {
   #about .body span {
     font-size: 1.3em;
@@ -60,6 +64,12 @@ margin-bottom: 20px;
   }
 
   #about .slider.mobile-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  #about .slider.tablet-hidden {
     display: none;
   }
 }

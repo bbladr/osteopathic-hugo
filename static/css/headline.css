@@ -4,8 +4,7 @@
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    /* 謎の画像上下に余白が足される減少に対応 */
-    padding-top: 50px;
+    padding-top: 100px;
     color: #fff;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -29,9 +28,8 @@
 
 #headline .headline-image {
     width: 100%;
+    height: auto;
     object-fit: contain;
-    /* 謎の画像上下に余白が足される減少に対応 */
-    margin-bottom: -60px;
 }
 
 /* 
