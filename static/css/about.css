@@ -31,7 +31,7 @@ margin-bottom: 20px;
   border: solid 1px #ddd;
 }
 
-#about .slider.mobile.tablet {
+#about .slider.tablet {
   display: none;
 }
 
@@ -41,7 +41,7 @@ margin-bottom: 20px;
     margin: 5px 10px;
   }
 
-  #about .slider.mobile {
+  #about .slider.mobile.tablet {
     display: block;
     margin: 20px 0px;
     padding-right: 40px;
