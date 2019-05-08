@@ -160,8 +160,8 @@ footer .copyright, .sns-link {
   }
 }
 
-/* @media only screen and (max-width: 990px) {
-  #header .mobile-width {
+@media only screen and (max-width: 1300px) {
+  #header .tablet-width {
     padding: 0px;
   }
 
@@ -171,7 +171,7 @@ footer .copyright, .sns-link {
     padding: 0px;
   }
 
-  .mobile {
+  .tablet {
     display: inline;
   }
 
@@ -179,7 +179,7 @@ footer .copyright, .sns-link {
     padding: 60px 60px;
   }
 
-  .mobile-hidden {
+  .tablet-hidden {
     display: none;
   }
   
@@ -204,5 +204,5 @@ footer .copyright, .sns-link {
     border-top: 1px solid #dedede;
     z-index: 1000;
     padding: 5px 0px;
-  } */
+  }
 }
