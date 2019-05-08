@@ -110,7 +110,7 @@ footer .copyright, .sns-link {
   display: none;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   #header .mobile-width {
     padding: 0px;
   }
@@ -160,7 +160,7 @@ footer .copyright, .sns-link {
   }
 }
 
-@media only screen and (max-width: 990px) {
+/* @media only screen and (max-width: 990px) {
   #header .mobile-width {
     padding: 0px;
   }
@@ -204,5 +204,5 @@ footer .copyright, .sns-link {
     border-top: 1px solid #dedede;
     z-index: 1000;
     padding: 5px 0px;
-  }
+  } */
 }
