@@ -51,6 +51,12 @@ theme = "timer-hugo"
         headlineMobile = "images/headline-mobile.png"
         description = ""
 
+    # review Section
+    [params.review]
+        enable  = true
+        coupon = "images/coupon.png"
+        description = ""
+
     # about Section
     [params.about]
         enable  = true

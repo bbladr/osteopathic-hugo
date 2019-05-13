@@ -1,0 +1,52 @@
+{{ if .Site.Params.profile.enable }}
+{{ "<!-- Profile Section Start -->" | safeHTML }}
+<section id="profile" style='background-color: #f0f0f0'>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="title text-center">
+          <div class="title-main">当院に寄せられた患者さまの声</div>
+        </div>
+      </div>
+      <div class="body">
+        <div class="staff">
+          <div class="row">
+            <div class="image col-md-3 mobile tablet">
+                <img src="{{ .Site.Params.profile.ryu }}" width="80%">
+              </div>
+            <div class="col-md-9">
+              <p class="position"><strong>院長</strong></p>
+              <p class="name"><strong>大上　竜</strong></p>
+              <p class="description">
+                <div>青森県出身。</div>
+                <div>新潟柔整専門学校卒業後、整形外科に３年間、整骨院に３年間勤務の後、独立。</div>
+                <div>どんな事でもお任せください。</div>
+              </p>
+            </div>
+            <div class="image col-md-3 mobile-hidden tablet-hidden">
+              <img src="{{ .Site.Params.profile.ryu }}" width="80%">
+            </div>
+          </div>
+        </div>
+        <div class="staff">
+          <div class="row">
+            <div class="image col-md-3">
+              <img src="{{ .Site.Params.profile.hiromi }}" width="80%">
+            </div>
+            <div class="col-md-9">
+              <p class="position"><strong>スタッフ</strong></p>
+              <p class="name"><strong>大上　宏美</strong></p>
+              <p class="description">
+                <div>埼玉県出身。</div>
+                <div>さいたま柔整専門学校卒業後、整形外科に６年間勤務の後、独立。</div>
+                <div>女性ならではの症状、お悩み、ご相談ください。</div>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- Profile Section End -->" | safeHTML }}
+{{ end }}
