@@ -1,0 +1,61 @@
+#review .body {
+    width:100%;
+    text-align: center;
+}
+
+#review .review-box {
+    border-radius: 10px;
+    background-color: white;
+    border: solid 2px lightgray;
+}
+
+#review .review-box .review-top {
+    background-color: var(--box-color);
+    border-radius: 10px;
+    padding: 10px 50px;
+}
+
+#review .review-box .review-top div {
+    color: white;
+}
+
+#review .review-box .review-top .review-title {
+    font-weight: 700;
+    font-size: 1.7em;
+}
+
+#review .review-image {
+    max-width: 100%;
+    padding:10px 0px;
+}
+
+#review .review-description {
+    margin: 0px 10px 30px 10px;
+}
+
+#review .review-description .review-question {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--box-color);
+    color: white;
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+#review .review-description .review-answer {
+    margin: 5px;
+    text-align: left;
+}
+
+#review .review-box .review-annotation {
+    text-align: left;
+    color: gray;
+    font-size: 0.9em;
+    margin: 10px;
+}
+
+@media only screen and (max-width: 470px) {
+}
+
+@media only screen and (max-width: 1300px) {
+}

@@ -1,46 +1,96 @@
-{{ if .Site.Params.profile.enable }}
-{{ "<!-- Profile Section Start -->" | safeHTML }}
-<section id="profile" style='background-color: #f0f0f0'>
+{{ if .Site.Params.review.enable }}
+{{ "<!-- Review Section Start -->" | safeHTML }}
+<section id="review" style='background-color: #f0f0f0'>
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <div class="title text-center">
           <div class="title-main">当院に寄せられた患者さまの声</div>
+          <p class="title-description">当院に来院した患者様はこんな驚きの変化を手に入れています…</p>
         </div>
       </div>
       <div class="body">
-        <div class="staff">
-          <div class="row">
-            <div class="image col-md-3 mobile tablet">
-                <img src="{{ .Site.Params.profile.ryu }}" width="80%">
-              </div>
-            <div class="col-md-9">
-              <p class="position"><strong>院長</strong></p>
-              <p class="name"><strong>大上　竜</strong></p>
-              <p class="description">
-                <div>青森県出身。</div>
-                <div>新潟柔整専門学校卒業後、整形外科に３年間、整骨院に３年間勤務の後、独立。</div>
-                <div>どんな事でもお任せください。</div>
-              </p>
+        <div class="row">
+          <div class="col-sm-6">
+              <div class="review-box">
+            <div class="review-top">
+              <div class="review-title">朝起きた時のつらい腰痛がなくなりました！</div>
+              <div>（野田市　主婦　７０代　T.K様）</div>
             </div>
-            <div class="image col-md-3 mobile-hidden tablet-hidden">
-              <img src="{{ .Site.Params.profile.ryu }}" width="80%">
+            <div class="review-image">
+              <img src="{{ .Site.Params.review.sheet1 }}" alt="お客様の声" width="60%">
+            </div>
+            <div class="review-description">
+              <div class="review-question">
+                Q 施術を受ける前はどんなことでお困りでしたか？
+              </div>
+              <div class="review-answer">
+                来院する4、5日前より背中、腰が痛くなり、来院する朝には神経まで痛くなり、うつ状態になった様で来院、　歩くのもやっとでした。
+              </div>
+            </div>
+            <div class="review-description">
+              <div class="review-question">
+                Q 当院の施術を受けてみてどうでしたか？
+              </div>
+              <div class="review-answer">
+                とても親切に全身見て下さり、一週間もすると今までのが何だったのかと思われる程、痛みもなくなり良くなりました。
+                腰のケアのため、少し通院に見てもらいます。
+              </div>
+            </div>
+            <div class="review-description">
+              <div class="review-question">
+                Q あなたと同じような悩みをお持ちの方に、
+                一言お願いします
+              </div>
+              <div class="review-answer">
+                各人に合った施術を親切に施していただけてますので、とても良い医院だと思います。先生お二人とてもすてきです。
+                痛みがでたら又すぐに来院したいです。
+              </div>
+            </div>
+            <div class="review-annotation">
+              ※個人の感想であり成果や成功を保証するものではありません。
+            </div>
             </div>
           </div>
-        </div>
-        <div class="staff">
-          <div class="row">
-            <div class="image col-md-3">
-              <img src="{{ .Site.Params.profile.hiromi }}" width="80%">
+          <div class="col-sm-6">
+            <div class="review-box">
+            <div class="review-top">
+              <div class="review-title">こんなに痛みが取れるならもっと早くに来ておけばよかった！</div>
+              <div>（野田市　会社員　３０代　ゆか様）</div>
             </div>
-            <div class="col-md-9">
-              <p class="position"><strong>スタッフ</strong></p>
-              <p class="name"><strong>大上　宏美</strong></p>
-              <p class="description">
-                <div>埼玉県出身。</div>
-                <div>さいたま柔整専門学校卒業後、整形外科に６年間勤務の後、独立。</div>
-                <div>女性ならではの症状、お悩み、ご相談ください。</div>
-              </p>
+            <div class="review-image">
+              <img src="{{ .Site.Params.review.sheet2 }}" alt="お客様の声" width="60%">
+            </div>
+            <div class="review-description">
+              <div class="review-question">
+                Q 施術を受ける前はどんなことでお困りでしたか？
+              </div>
+              <div class="review-answer">
+                体がだるい、リフレッシュしたい、肩と腰に違和感　
+              </div>
+            </div>
+            <div class="review-description">
+              <div class="review-question">
+                Q 当院の施術を受けてみてどうでしたか？
+              </div>
+            <div class="review-answer">
+              とてもスッキリしました。
+              肩と腰をしっかり丁寧におしていただいたので、違和感がスッとなくなったような気がします。
+            </div>
+            </div>
+              <div class="review-description">
+                <div class="review-question">
+                  Q あなたと同じような悩みをお持ちの方に、
+                  一言お願いします
+                </div>
+                <div class="review-answer">
+                    ケガ、病気がないと整骨院は行きづらいと感じている人もいるかと思いますが、整骨院だからこそ、的確なツボを刺激してもらことができ、効果を実感できる施術が受けられます。
+                    変なマッサージ屋さんに行くより、断然いいと思います。（笑）
+                  </div>
+              </div>
+              <div class="review-annotation">
+                  ※個人の感想であり成果や成功を保証するものではありません。
+                </div>
             </div>
           </div>
         </div>

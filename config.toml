@@ -54,7 +54,8 @@ theme = "timer-hugo"
     # review Section
     [params.review]
         enable  = true
-        coupon = "images/coupon.png"
+        sheet1 = "images/review/sheet1.png"
+        sheet2 = "images/review/sheet2.png"
         description = ""
 
     # about Section
