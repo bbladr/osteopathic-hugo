@@ -123,6 +123,10 @@ footer .copyright, .sns-link {
     display: inline;
   }
 
+  .mobile.tablet-hidden {
+    display: inline;
+  }
+
   .mobile-hidden {
     display: none;
   }
