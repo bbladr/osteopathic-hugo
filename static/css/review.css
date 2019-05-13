@@ -7,6 +7,7 @@
     border-radius: 10px;
     background-color: white;
     border: solid 2px lightgray;
+    margin-top: 20px;
 }
 
 #review .review-box .review-top {
@@ -55,7 +56,53 @@
 }
 
 @media only screen and (max-width: 470px) {
+    #review .container .title-main {
+        font-size: 1.4em;
+        margin: 0px;
+    }
+
+    #review .container .title-description {
+        font-size: 1em;
+    }
+
+    #review .container .review-box .review-top {
+        padding: 10px 15px;
+    }
+
+    #review .container .review-box .review-top .review-title {
+        font-size: 1.2em;
+    }
+
+    #review .container .review-box .reviewer {
+        font-size: 1em;
+    }
+
+    #review .container .review-description .review-question {
+        padding: 5px;
+        font-size: 1em;
+    }
+
+    #review .review-description .review-answer {
+        font-size: 0.9em;
+    }
+
+    #review .container .review-box .review-annotation {
+        font-size: 0.6em;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
+    #review .review-box .review-top {
+        padding: 10px 20px;
+    }
+
+    #review .review-box .review-top .review-title {
+        font-size: 1.4em;
+    }
+
+    #review .review-description .review-question {
+        padding: 10px;
+        font-size: 1.1em;
+    }
+    
 }
