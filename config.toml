@@ -11,6 +11,10 @@ theme = "timer-hugo"
     [[menu.nav]]
         name    = "当院について"
         url     = "#about"
+        weight  = 1
+    [[menu.nav]]
+        name    = "患者様の声"
+        url     = "#review"
         weight  = 2
     [[menu.nav]]
         name    = "スタッフ"
@@ -49,6 +53,13 @@ theme = "timer-hugo"
         welcome = "images/welcome.png"
         headlinePC = "images/headline-pc.png"
         headlineMobile = "images/headline-mobile.png"
+        description = ""
+
+    # review Section
+    [params.review]
+        enable  = true
+        sheet1 = "images/review/sheet1.png"
+        sheet2 = "images/review/sheet2.png"
         description = ""
 
     # about Section
