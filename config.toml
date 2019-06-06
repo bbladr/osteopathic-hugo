@@ -62,6 +62,11 @@ theme = "timer-hugo"
         sheet2 = "images/review/sheet2.png"
         description = ""
 
+    # recommend Section
+    [params.recommend]
+        enable  = false
+        description = ""
+
     # about Section
     [params.about]
         enable  = true
@@ -71,6 +76,10 @@ theme = "timer-hugo"
         image4 = "images/image/4.jpg"
         image5 = "images/image/5.jpg"
         coupon = "images/coupon.png"
+        description = ""
+
+    # offer Section
+    [params.offer]
         description = ""
 
     # profile Section
