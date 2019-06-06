@@ -1,60 +1,15 @@
-{{ if .Site.Params.about.enable }}
-{{ "<!-- About Section Start -->" | safeHTML }}
-<section id="about" style="background-color: #FFF;">
+{{ if .Site.Params.recommend.enable }}
+{{ "<!-- Recommend Section Start -->" | safeHTML }}
+<section id="recommend" style="background-color: #EEE;">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="title text-center">
-          <div class="title-main">当院について</div>
-          <p class="title-description">こんなお悩みはありませんか？</p>
-        </div>
         <div class="body text-center">
-          <p class="terms">
-            <span class="badge badge-light"> 腰痛 </span>
-            <span class="badge badge-light"> 膝の痛み </span>
-            <span class="badge badge-light"> 肩こり </span>
-            <span class="badge badge-light"> 首の痛み </span>
-            <span class="badge badge-light"> むくみ </span>
-          </p>
-          <div class="row">
-            <div class="col-md-7 text-left">
-              <p>全力で皆様のお悩みと向き合って施術させていただきます。</p>
-              <ul class="slider mobile tablet-hidden pc-hidden">
-                  <li><img src="{{ .Site.Params.about.image1 }}" alt="診療イメージ1"></li>
-                  <li><img src="{{ .Site.Params.about.image2 }}" alt="診療イメージ2"></li>
-                  <li><img src="{{ .Site.Params.about.image3 }}" alt="診療イメージ3"></li>
-                  <li><img src="{{ .Site.Params.about.image4 }}" alt="診療イメージ4"></li>
-                  <li><img src="{{ .Site.Params.about.image5 }}" alt="診療イメージ5"></li>
-                  </ul>
-              <p>どんな症状でもお気軽にご相談ください。</p>
-              <p class="comment">根本治療を一緒に頑張ることをモットーに地域の皆様に愛されるような院を目指しております！</p>
-              <div class="time-box">
-                <div>【営業時間】 8:00 ~ 20:00</diV>
-                <div class="mobile-hidden tablet-hidden">【定休日】 日曜日（土曜・祝日は営業しています！）</div>
-                <div class="mobile tablet">【定休日】 日曜日</div>
-                <div class="ml-2">
-                  LINEでのご予約は24時間いつでも承っております。
-                  <a href="https://line.me/R/ti/p/%40csl7770d"><img height="36" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
-                </div>
-              </div> 
-            </div>
-            <div class="col-md-5">
-              <div class="coupon">
-                <img src="{{ .Site.Params.about.coupon }}" alt="coupon" width="100%">
-              </div>
-            </div>
-          </div>
-          <ul class="slider mobile-hidden tablet pc">
-            <li><img src="{{ .Site.Params.about.image1 }}" alt="診療イメージ1"></li>
-            <li><img src="{{ .Site.Params.about.image2 }}" alt="診療イメージ2"></li>
-            <li><img src="{{ .Site.Params.about.image3 }}" alt="診療イメージ3"></li>
-            <li><img src="{{ .Site.Params.about.image4 }}" alt="診療イメージ4"></li>
-            <li><img src="{{ .Site.Params.about.image5 }}" alt="診療イメージ5"></li>
-            </ul>
+         
         </div>
       </div>
     </div>
   </div>
 </section>
-{{ "<!-- About Section End -->" | safeHTML }}
+{{ "<!-- Recommend Section End -->" | safeHTML }}
 {{ end }}
