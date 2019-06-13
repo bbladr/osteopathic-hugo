@@ -35,5 +35,7 @@ margin-left: 33px;
   text-align: left;
 }
 @media only screen and (max-width: 470px) {
-
+  #recommend .point {
+    font-size: 1.1em;
+  }
 }
