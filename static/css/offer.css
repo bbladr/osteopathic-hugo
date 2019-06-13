@@ -1,4 +1,61 @@
+#offer .green-box{
+  background-color: var(--box-color);
+  width: 100%;
+  padding: 10px;
+}
+#offer .green-box div{
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
+}
 
+#offer .cost-image{
+  margin: 25px;
+  border: 3px solid red;
+  padding: 10px;
+}
+
+#offer .description{
+  font-size: 1.4em;
+  padding: 0px 30px;
+  margin-bottom: 20px;
+}
+
+#offer .phone div{
+  color: #009051;
+  font-size: 1.4em;
+}
+
+#offer .phone-icon{
+  vertical-align: bottom;
+}
+
+#offer .phone .phone-number{
+  font-weight: 700;
+  font-size: 7em;
+}
+
+#offer .phone-nav{
+  color: var(--dark);
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 0px 50px 50px 50px;
+}
+
+#offer .high-light{
+  background: linear-gradient(transparent 50%, yellow 50%);
+  width: 50%;
+}
+
+#offer .line-box{
+  position: relative;
+}
+
+#offer .line-btn{
+  position: absolute;
+  left: 30%;
+  top: 90%;
+}
 
 @media only screen and (max-width: 470px) {
 

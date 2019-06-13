@@ -1,5 +1,39 @@
+#recommend .title-main div{
+  font-size: 0.7em;  
+  font-weight: 700;
+  color: var(--accent-color);
+}
 
+#recommend .fa-check-circle{
+  color: var(--box-color);
+  font-size: 1.2em;
+  margin: 0px 5px;
+  float: left;
+}
 
+#recommend .br{
+margin-left: 33px;
+}
+
+#recommend .point{
+  font-size: 1.3em;
+  padding: 15px 0px;
+  border-bottom: 1px dotted gray;
+}
+
+#recommend .arrow{
+  margin: auto;
+}
+
+#recommend .high-light{
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+#recommend .conclusion div{
+  margin-top: 20px;
+  font-size: 1.4em;
+  font-weight: 700;
+  text-align: left;
+}
 @media only screen and (max-width: 470px) {
 
 }

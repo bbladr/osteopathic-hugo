@@ -64,7 +64,9 @@ theme = "timer-hugo"
 
     # recommend Section
     [params.recommend]
-        enable  = false
+        enable  = true
+        image = "images/recommend.png"
+        arrow = "images/arrow.png"
         description = ""
 
     # about Section
@@ -80,6 +82,10 @@ theme = "timer-hugo"
 
     # offer Section
     [params.offer]
+        enable  = true
+        cost = "images/cost.png"
+        phone = "images/phone-icon.png"
+        line = "images/line.png"
         description = ""
 
     # profile Section
