@@ -1,12 +1,3 @@
-#about .body .terms {
-  margin-bottom: 30px;
-}
-
-#about .body span {
-  font-size: 1.5em;
-  margin: 0px 10px;
-}
-
 #about .body p {
   font-size: 1.3em;
 }
@@ -14,9 +5,9 @@
 #about .time-box {
 background-color: #eee;
 border-radius: 0.5rem;
-padding: 10px 15px;
+padding: 10px 70px 10px 15px;
 font-size: 1.1em;
-margin-bottom: 20px;
+margin: 0px auto 20px auto;
 }
 
 #about .body .comment {
@@ -26,9 +17,6 @@ margin-bottom: 20px;
 
 #about .slider-arrow {
   font-size: 3em;
-}
-#about .body .coupon {
-  border: solid 1px #ddd;
 }
 
 #about .slider.mobile.pc-hidden {
