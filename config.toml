@@ -1,6 +1,6 @@
 baseURL = "https://midori-osteopathic-clinic.netlify.com/"
 languageCode = "en-us"
-title = "みどり整骨院"
+title = "みどり整骨院 - 川間駅から徒歩１分のアットホームな整骨院"
 theme = "timer-hugo"
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
@@ -42,7 +42,7 @@ theme = "timer-hugo"
     phone = "images/phone.png"
     dateFormat = "1 April 2019"
     # Meta data
-    description = "Home page of midori osteopathic clinic"
+    description = "野田市川間に所在するみどり整骨院のホームページです。腰痛、肩こり、疲労回復、ねんざ、脱臼、アロマエステ、フェイスマッサージなど、患者様のお悩みにお答えします。（大上　竜）"
     author = "Yuusuke Takizawa"
     # Google Analitycs
     googleAnalitycsID = "Your ID"
