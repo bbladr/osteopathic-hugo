@@ -29,13 +29,6 @@ margin: 20px auto;
     margin: 5px 10px;
   }
 
-  #about .slider.mobile.tablet {
-    display: block;
-    margin: 20px 0px;
-    padding-right: 40px;
-    width: 100%; 
-  }
-
   #about .slider.mobile .slider-arrow {
     position: absolute;
     top: 45%;
@@ -52,12 +45,6 @@ margin: 20px auto;
   }
 
   #about .slider.mobile-hidden {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1300px) {
-  #about .slider.tablet-hidden {
     display: none;
   }
 }

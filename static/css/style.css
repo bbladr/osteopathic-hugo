@@ -127,10 +127,6 @@ footer .copyright, .sns-link {
     display: inline;
   }
 
-  .mobile.tablet-hidden {
-    display: inline;
-  }
-
   .mobile-hidden {
     display: none;
   }
@@ -169,26 +165,14 @@ footer .copyright, .sns-link {
 }
 
 @media only screen and (max-width: 1300px) {
-  #header .tablet-width {
-    padding: 0px;
-  }
-
   div.container {
     max-width: 100%;
     margin: 0px;
     padding: 0px;
   }
 
-  .tablet {
-    display: inline;
-  }
-
   section:not(#header) .container  {
     padding: 60px 60px;
-  }
-
-  .tablet-hidden {
-    display: none;
   }
   
   .navbar-brand {
