@@ -3,20 +3,22 @@
 <section id="headline">
   <div class="container">
     <div class="block wow fadeInUp" data-wow-delay=".3s">
-      <div class="row text-center">
-        <div class="mobile-hidden col-md-12">
-          <img class="headline-image" src="{{ .Site.Params.headline.headlinePC }}" alt="野田市川間駅のアットホームな接骨院・整骨院">
+      <div class="row headline-image-row text-center">
+        <div class="col-12 headline-image-col">
+          <img class="headline-image mobile-hidden" src="{{ .Site.Params.headline.headlinePC }}" alt="野田市川間駅のアットホームな接骨院・整骨院">
+          <img class="headline-image mobile" src="{{ .Site.Params.headline.headlineMobile }}" width="100%">
         </div>
-        <div class="headline-image mobile">
-          <img src="{{ .Site.Params.headline.headlineMobile }}" width="100%">
-        </div>
-        <div class="body col-md-12">
-          <div class="mobile">
-            <div class="line-add">
-              <span>LINEでの予約もできます！</span>
-              <a href="https://line.me/R/ti/p/%40csl7770d"><img height="36" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
-            </div>
+      </div>
+      <div class="mobile">
+        <div class="row line-row">
+          <div class="col-12 line-col">
+            <span>LINEでの予約もできます！</span>
+            <a href="https://line.me/R/ti/p/%40csl7770d"><img height="36" alt="友だち追加" src="https://scdn.line-apps.com/n/line_add_friends/btn/ja.png"></a>
           </div>
+        </div>
+      </div>
+      <div class="row news-row">
+        <div class="col-12 news-col">
           <div class="news-box text-left">
             <strong class="text-left">- NEWS -</strong>
             <div class="topic">
