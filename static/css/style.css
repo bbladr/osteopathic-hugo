@@ -40,6 +40,11 @@ section.top-bar {
   z-index: 1000;
 }
 
+/* header section からはみ出るため（bootstrap のデフォルトサイズのせい?) */
+#header div {
+  max-height: 80px;
+}
+
 #header .navbar {
   padding-right: 0px;
   padding-left: 0px;
@@ -115,12 +120,13 @@ footer .copyright, .sns-link {
 }
 
 @media only screen and (max-width: 470px) {
-  #header .mobile-width {
-    padding: 0px;
-  }
-
   section.top-bar {
     height: 65px;
+  }
+
+  /* header section からはみ出るため（bootstrap のデフォルトサイズのせい?) */
+  #header div {
+    max-height: 60px;
   }
 
   .mobile {
@@ -197,4 +203,22 @@ footer .copyright, .sns-link {
     z-index: 1000;
     padding: 5px 0px;
   }
+}
+
+/* トップバーのメニューがトグルになってる時 */
+@media only screen and (max-width: 992px) {
+  #header .nav-hidden {
+    display: none;
+  }
+
+  #header .navbar-collapse {
+    /* 展開後のメニューがロゴに食い込んでるため */
+    margin-top: 15px;
+    max-height: none;
+    padding-bottom: 15px;
+    /* 以下三行、collapse の width が変更できないため */
+    min-width: 100vw;
+    margin-left: -15px;
+    padding-left: 15px;
+  }  
 }
