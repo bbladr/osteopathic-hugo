@@ -24,6 +24,10 @@ margin: 20px 200px;
 }
 
 @media only screen and (max-width: 470px) {
+  #about .time-box {
+    margin: 0px;
+    padding-right: 10px;
+  }
   #about .body span {
     font-size: 1.3em;
     margin: 5px 10px;
