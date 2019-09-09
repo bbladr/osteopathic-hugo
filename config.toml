@@ -3,8 +3,6 @@ languageCode = "en-us"
 title = "みどり整骨院 - 野田市川間駅から徒歩１分のアットホームな接骨院・整骨院"
 theme = "timer-hugo"
 
-# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
-
 # Site Menus
 [menu]
     # Navbar Menus
@@ -20,18 +18,10 @@ theme = "timer-hugo"
         name    = "スタッフ"
         url     = "#profile"
         weight  = 3
-    # [[menu.nav]]
-    #     name    = "施術費用"
-    #     url     = "/cost"
-    #     weight  = 4
     [[menu.nav]]
         name    = "アクセス"
         url     = "#access"
-        weight  = 5
-    # [[menu.nav]]
-    #     name    = "診察予約"
-    #     url     = "#reservartion"
-    #     weight  = 6
+        weight  = 4
 
 # Site Params
 [params]
@@ -43,13 +33,13 @@ theme = "timer-hugo"
     dateFormat = "1 April 2019"
     # Meta data
     description = "野田市川間に所在するみどり整骨院のホームページです。腰痛、肩こり、疲労回復、ねんざ、脱臼、アロマエステ、フェイスマッサージなど、患者様のお悩みにお答えします。（大上　竜）"
-    author = "Yuusuke Takizawa"
+    author = "Yusuke Takizawa"
     # Google Analitycs
-    googleAnalitycsID = "Your ID"
+    googleAnalitycsID = "UA-147428507-1"
 
     # headline Section
     [params.headline]
-        enable  = true
+        enable = true
         welcome = "images/welcome.png"
         headlinePC = "images/headline-pc.png"
         headlineMobile = "images/headline-mobile.png"
@@ -57,21 +47,21 @@ theme = "timer-hugo"
 
     # review Section
     [params.review]
-        enable  = true
+        enable = true
         sheet1 = "images/review/sheet1.png"
         sheet2 = "images/review/sheet2.png"
         description = ""
 
     # recommend Section
     [params.recommend]
-        enable  = true
+        enable = true
         image = "images/recommend.png"
         arrow = "images/arrow.png"
         description = ""
 
     # about Section
     [params.about]
-        enable  = true
+        enable = true
         image1 = "images/image/1.jpg"
         image2 = "images/image/2.jpg"
         image3 = "images/image/3.jpg"
@@ -81,7 +71,7 @@ theme = "timer-hugo"
 
     # offer Section
     [params.offer]
-        enable  = true
+        enable = true
         cost = "images/cost.png"
         phone = "images/phone-icon.png"
         line = "images/line.png"
