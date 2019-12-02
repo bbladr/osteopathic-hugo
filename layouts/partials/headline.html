@@ -22,13 +22,17 @@
           <div class="news-box text-left">
             <strong class="text-left">- NEWS -</strong>
             <div class="topic">
-              <div><u class="date">2019.04.22</u>GW中の休業日(5月4,5,6日)のお知らせ</div>
-              <div class="detail">                
-                ＧＷは5月4日(土)～6日(月)までお休みを頂いております。
-                ご迷惑お掛け致しますが、お願い申し上げます。
-              </div>
-              <div><u class="date">2019.04.08</u>[4月限定]初回のご来院の方は500円で体験できます！(<a href="https://line.me/R/ti/p/%40csl7770d">LINE予約のみ</a>)</div>
-              <div><u class="date">2019.04.08</u>今年の4月からリニューアルオープンしました！</div>
+
+              {{ with .Site.GetPage "/news" }}
+                  {{ range .Pages }}
+                  <div>
+                    <a href="{{ .RelPermalink }}" style="color: #000">
+                      <u class="date">{{ .Date.Format "2006/01/02" }}</u>
+                      {{ .Title }}
+                    </a>
+                  </div>
+                  {{ end }}
+              {{ end }}
             </div>
           </div>
         </div>
