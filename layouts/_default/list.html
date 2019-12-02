@@ -1,22 +1,14 @@
 {{ partial "header.html" . }}
 
-{{ partial "page-title.html" . }}
-
-<section id="blog-full-width">
+<section id="list">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 {{ range .Data.Pages }}
                 <article class="wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">
-                    
-                    <div class="blog-post-image">
-                        <a href="{{ .Permalink }}">
-                             {{ with .Params.image }}<img class="img-fluid" src="{{ . | absURL }}" alt="post-image"/>{{ end }}
-                        </a>
-                    </div>
                     <div class="blog-content">
                         <h2 class="blogpost-title">
-                            <a href="{{ .Permalink }}">{{ .Title }}</a>
+                            <a href="{{ .Permalink }}" style="color: cadetblue">{{ .Title }}</a>
                         </h2>
                         <div class="blog-meta">
                             <span>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
@@ -24,16 +16,10 @@
                                 {{ . }}
                             </span>
                             {{ end }}
-                            {{ with .Params.tags }}
-                            <span>
-                                {{ delimit . ", " }}
-                            </span>
-                            {{ end }}
                         </div>
                         <p>
                             {{ .Summary }}
                         </p>
-                        {{ with .Permalink }}<a href="{{ . }}" class="btn btn-dafault btn-details hvr-bounce-to-right">Continue Reading</a>{{ end }}
                     </div>
                 </article>
                 {{ end }}
@@ -41,7 +27,5 @@
         </div>
     </div>
 </section>
-
-{{ partial "cta.html" . }}
 
 {{ partial "footer.html" . }}
