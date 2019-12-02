@@ -24,7 +24,8 @@
     const title = $('#news-title-form').val();
     const body = $('#news-body-form').val();
     const article = generateArticle(title, body, now);
-    const articleBase64 = btoa(article);
+    console.log(article);
+    const articleBase64 = btoa(unescape(encodeURIComponent(article)));
 
     const baseUrl = "https://api.github.com";
     const endPoint = "/repos/bbladr/osteopathic-hugo/contents";
