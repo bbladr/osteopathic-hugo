@@ -14,11 +14,11 @@
 
     const now = new Date();
     const year = now.getFullYear();
-    const month = now.getMonth() + 1;
-    const date = now.getDate();
-    const hour = now.getHours();
-    const minute = now.getMinutes();
-    const second = now.getSeconds();
+    const month = toDoubleDigits(now.getMonth() + 1);
+    const date = toDoubleDigits(now.getDate());
+    const hour = toDoubleDigits(now.getHours());
+    const minute = toDoubleDigits(now.getMinutes());
+    const second = toDoubleDigits(now.getSeconds());
     const time = `${year}${month}${date}${hour}${minute}${second}`;
 
     const createAt = `${year}-${month}-${date}T${hour}:${minute}:${second}+09:00`;
@@ -51,12 +51,22 @@
   });
 </script>
 <script>
-generateArticle = function(title, body, createAt) {
-return `---
-title: "${title}"
-date: ${createAt}
-description : "news"
----
-${body}`
-}
+  const generateArticle = function(title, body, createAt) {
+  return `---
+  title: "${title}"
+  date: ${createAt}
+  description : "news"
+  ---
+  ${body}`
+  }
+</script>
+<script>
+  // 1桁の数字を0埋めで2桁にする
+  const toDoubleDigits = function(num) {
+    num += "";
+    if (num.length === 1) {
+      num = "0" + num;
+    }
+  return num;     
+  };
 </script>
