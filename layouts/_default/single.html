@@ -1,26 +1,18 @@
 {{ partial "header.html" . }}
 
-<section class="global-page-header">
+<section id="single" class="global-page-header">
     <div class="container">
-        <div class="row">
+        <div class="row" id="post-title">
             <div class="col-md-12">
                 <div class="block">
                     <h2>{{ .Title }}</h2>
                     <div class="portfolio-meta">
-                        <span>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>|
-                        <span> Tags:
-                            {{ delimit .Params.tags ", " }}
-                        </span>
+                        <span>{{ dateFormat "Monday, Jan 2, 2006" .Date }}</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
-
-<section class="single-post">
-    <div class="container">
-        <div class="row">
+        <div class="row" id="post-content">
             <div class="col-md-12">
                 {{ with .Params.image }}
                 <div class="post-img">
@@ -35,6 +27,6 @@
     </div>
 </section>
 
-{{ partial "cta.html" . }}
+
 
 {{ partial "footer.html" . }}
