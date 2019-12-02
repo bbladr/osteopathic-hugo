@@ -21,10 +21,10 @@
     const second = now.getSeconds();
     const time = `${year}${month}${date}${hour}${minute}${second}`;
 
+    const createAt = `${year}-${month}-${date}T${hour}:${minute}:${second}+09:00`;
     const title = $('#news-title-form').val();
     const body = $('#news-body-form').val();
-    const article = generateArticle(title, body, now);
-    console.log(article);
+    const article = generateArticle(title, body, createAt);
     const articleBase64 = btoa(unescape(encodeURIComponent(article)));
 
     const baseUrl = "https://api.github.com";
