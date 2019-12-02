@@ -38,44 +38,6 @@
   ga('send', 'pageview');
 </script>
 <script>
-$('#news-upload').click(function () {
-	// token 入力ダイアログにより token を取得
-	const token_id = window.prompt("パスワードを入力してください", "");
-  const token = `token ${token_id}`;
-
-  const now = new Date();
-  const year = now.getFullYear();
-  const month = now.getMonth() + 1;
-  const date = now.getDate();
-  const hour = now.getHours();
-  const minute = now.getMinutes();
-  const second = now.getSeconds();
-  const time = `${year}${month}${date}${hour}${minute}${second}`;
-
-  const baseUrl = "https://api.github.com";
-  const endPoint = "/repos/bbladr/osteopathic-hugo/contents";
-  const filePath = `/content/cost/${time}.md`;
-  const url = `${baseUrl}${endPoint}${filePath}`;
-
-  $.ajax({
-    type: "PUT",
-    url: url,
-    data: JSON.stringify({
-      "message": "Upload a news article",
-      "content": "bXkgbmV3IGZpbGUgY29udGVudHM=",
-    }),
-    headers: {
-      "Authorization": token,
-      "Content-Type": "application/json",
-    },
-  }).done(function(data) {
-      console.log('成功');
-  }).fail(function(data) {
-      console.log('失敗');
-  });
-});
-</script>
-<script>
 $('.slider').slick({
   autoplay:true,
   autoplaySpeed:2500,

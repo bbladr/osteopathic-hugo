@@ -1,0 +1,61 @@
+<body>
+  <input id="news-title-form" type="text" placeholder="タイトル">
+  <textarea id="news-body-form" placeholder="内容"></textarea>
+  <input type="button" id="news-upload" value="送信">
+</body>
+
+{{ "<!-- jquery -->" | safeHTML }}
+<script src='{{ "plugins/jQurey/jquery.min.js" | absURL }}'></script>
+<script>
+  $('#news-upload').click(function () {
+    // token 入力ダイアログにより token を取得
+    const token_id = window.prompt("パスワードを入力してください", "");
+    const token = `token ${token_id}`;
+
+    const now = new Date();
+    const year = now.getFullYear();
+    const month = now.getMonth() + 1;
+    const date = now.getDate();
+    const hour = now.getHours();
+    const minute = now.getMinutes();
+    const second = now.getSeconds();
+    const time = `${year}${month}${date}${hour}${minute}${second}`;
+
+    const title = $('#news-title-form').val();
+    const body = $('#news-body-form').val();
+    const article = generateArticle(title, body, now);
+    const articleBase64 = btoa(article);
+
+    const baseUrl = "https://api.github.com";
+    const endPoint = "/repos/bbladr/osteopathic-hugo/contents";
+    const filePath = `/content/cost/${time}.md`;
+    const url = `${baseUrl}${endPoint}${filePath}`;
+
+    $.ajax({
+      type: "PUT",
+      url: url,
+      data: JSON.stringify({
+        "message": "Upload a news article",
+        "content": articleBase64,
+      }),
+      headers: {
+        "Authorization": token,
+        "Content-Type": "application/json",
+      },
+    }).done(function(data) {
+        console.log('成功');
+    }).fail(function(data) {
+        console.log('失敗');
+    });
+  });
+</script>
+<script>
+generateArticle = function(title, body, createAt) {
+return `---
+title: "${title}"
+date: ${createAt}
+description : "news"
+---
+${body}`
+}
+</script>
