@@ -53,6 +53,9 @@
     // token 入力ダイアログにより token を取得
     const token_id = window.prompt("パスワードを入力してください", "");
     const token = `token ${token_id}`;
+    
+    $('#news-upload').val("投稿中...");
+    $('#news-upload').attr("disabled", "true");
 
     const now = new Date();
     const year = now.getFullYear();
@@ -89,6 +92,8 @@
       alert('Newsトピックを投稿しました。反映まで数分かかります。');
       $("#news-title-form").val("");
       $("#news-body-form").val("");
+      $('#news-upload').val("送信");
+      $('#news-upload').removeAttr("disabled");
     }).fail(function(data) {
       alert('投稿に失敗しました');
     });
@@ -97,11 +102,12 @@
 <script>
   const generateArticle = function(title, body, createAt) {
   return `---
-  title: "${title}"
-  date: ${createAt}
-  description : "news"
-  ---
-  ${body}`
+title: "${title}"
+date: ${createAt}
+description : "news"
+draft: false
+---
+${body}`
   }
 </script>
 <script>
