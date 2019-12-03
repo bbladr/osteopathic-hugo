@@ -1,11 +1,53 @@
+<style>
+  #news-title-form {
+    margin: 10px;
+  }
+  #news-body-form {
+    margin: 10px;
+  }
+  #news-upload {
+    margin: 10px;
+  }
+</style>
 <body>
-  <input id="news-title-form" type="text" placeholder="タイトル">
-  <textarea id="news-body-form" placeholder="内容"></textarea>
-  <input type="button" id="news-upload" value="送信">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <input id="news-title-form" type="text" placeholder="タイトル">
+      </div>
+      <div class="col-12">
+        <textarea id="news-body-form" placeholder="内容" rows="20"></textarea>
+      </div>
+      <div class="col-12">
+        <input type="button" id="news-upload" value="送信">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        投稿を削除する
+      </div>
+      <div class="col-12">
+        {{ with .Site.GetPage "/news" }}
+          {{ range .Pages }}
+            <input id="news-delete-list" value={{ .Date }}>
+              {{ .Date.Format "2006/01/02" }}
+              {{ .Title }}
+            </div>
+          {{ end }}
+      {{ end }}
+        </div>
+    </div>
+  </div>
 </body>
+
+
 
 {{ "<!-- jquery -->" | safeHTML }}
 <script src='{{ "plugins/jQurey/jquery.min.js" | absURL }}'></script>
+{{ "<!-- bootstrap js -->" | safeHTML }}
+<script src='{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}'></script>
+
 <script>
   $('#news-upload').click(function () {
     // token 入力ダイアログにより token を取得
@@ -44,9 +86,11 @@
         "Content-Type": "application/json",
       },
     }).done(function(data) {
-        console.log('成功');
+      alert('Newsトピックを投稿しました。反映まで数分かかります。');
+      $("#news-title-form").val("");
+      $("#news-body-form").val("");
     }).fail(function(data) {
-        console.log('失敗');
+      alert('投稿に失敗しました');
     });
   });
 </script>
@@ -70,3 +114,4 @@
   return num;     
   };
 </script>
+
