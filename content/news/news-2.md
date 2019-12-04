@@ -1,6 +1,6 @@
 ---
 title: "[4月限定]初回のご来院の方は500円で体験できます！"
-description: "2"
+description: "news-2"
 date: 2019-04-08T10:23:09+09:00
 draft: false
 ---

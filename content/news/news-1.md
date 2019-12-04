@@ -1,6 +1,6 @@
 ---
 title: "今年の4月からリニューアルオープンしました！"
-description: "1"
+description: "news-1"
 date: 2019-04-08T10:23:09+09:00
 draft: false
 ---
