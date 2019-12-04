@@ -16,9 +16,19 @@
         <div class="page-title">News トピック編集ページ</div>
         <input id="news-title-form" type="text" placeholder="タイトル">
       </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <label for="start">投稿日:</label>
+        <input type="date" id="news-date-form">
+      </div>
+    </div>
+    <div class="row">
       <div class="col-12">
         <textarea id="news-body-form" placeholder="内容" rows="20"></textarea>
       </div>
+    </div>
+    <div class="row">
       <div class="col-12">
         <input type="button" id="news-upload" value="送信">
       </div>
@@ -68,7 +78,7 @@
 
     const createAt = `${year}-${month}-${date}T${hour}:${minute}:${second}+09:00`;
     const title = $('#news-title-form').val();
-    const body = $('#news-body-form').val();
+    const body = enableSingleBr($('#news-body-form').val());
     const article = generateArticle(title, body, createAt, news.length+1);
     const articleBase64 = btoa(unescape(encodeURIComponent(article)));
 
@@ -195,3 +205,34 @@ ${body}`
       });
     }
   </script>
+<script>
+  const enableSingleBr = function(sentence) {
+    return sentence.replace(/\n/gi, '\n\n');
+  }
+</script>
+
+<script>
+  //今日の日時を表示
+      window.onload = function () {
+          //今日の日時を表示
+          var date = new Date()
+          var year = date.getFullYear()
+          var month = date.getMonth() + 1
+          var day = date.getDate()
+        
+          var toTwoDigits = function (num, digit) {
+            num += ''
+            if (num.length < digit) {
+              num = '0' + num
+            }
+            return num
+          }
+          
+          var yyyy = toTwoDigits(year, 4)
+          var mm = toTwoDigits(month, 2)
+          var dd = toTwoDigits(day, 2)
+          var ymd = yyyy + "-" + mm + "-" + dd;
+          
+          $("#news-date-form").val(ymd);
+      }
+</script>
