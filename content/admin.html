@@ -13,6 +13,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
+        <div class="page-title">News トピック編集ページ</div>
         <input id="news-title-form" type="text" placeholder="タイトル">
       </div>
       <div class="col-12">
@@ -24,32 +25,29 @@
     </div>
 
     <div class="row">
-      <div class="col-12">
-        投稿を削除する
-      </div>
-      <div class="col-12">
-        {{ with .Site.GetPage "/news" }}
-          {{ range .Pages }}
-            <input id="news-delete-list" value={{ .Date }}>
-              {{ .Date.Format "2006/01/02" }}
-              {{ .Title }}
-            </div>
-          {{ end }}
+      {{ with .Site.GetPage "/news" }}
+        {{ range .Pages }}
+          <div class="col-8">
+            {{ .Date.Format "2006/01/02" }}
+            {{ .Title }}
+          </div>
+          <div class="col-4">
+            <input type="button" id="news-delete" name="{{ .Description }}" value="削除">
+          </div>
+        {{ end }}
       {{ end }}
-        </div>
     </div>
   </div>
 </body>
-
-
 
 {{ "<!-- jquery -->" | safeHTML }}
 <script src='{{ "plugins/jQurey/jquery.min.js" | absURL }}'></script>
 {{ "<!-- bootstrap js -->" | safeHTML }}
 <script src='{{ "plugins/bootstrap/bootstrap.min.js" | absURL }}'></script>
 
+<!-- News 投稿 -->
 <script>
-  $('#news-upload').click(function () {
+  $('#news-upload').click( async function() {
     // token 入力ダイアログにより token を取得
     const token_id = window.prompt("パスワードを入力してください", "");
     const token = `token ${token_id}`;
@@ -66,15 +64,17 @@
     const second = toDoubleDigits(now.getSeconds());
     const time = `${year}${month}${date}${hour}${minute}${second}`;
 
+    const news = await getNews();
+
     const createAt = `${year}-${month}-${date}T${hour}:${minute}:${second}+09:00`;
     const title = $('#news-title-form').val();
     const body = $('#news-body-form').val();
-    const article = generateArticle(title, body, createAt);
+    const article = generateArticle(title, body, createAt, news.length+1);
     const articleBase64 = btoa(unescape(encodeURIComponent(article)));
 
     const baseUrl = "https://api.github.com";
     const endPoint = "/repos/bbladr/osteopathic-hugo/contents";
-    const filePath = `/content/news/${time}.md`;
+    const filePath = `/content/news/news-${news.length+1}.md`;
     const url = `${baseUrl}${endPoint}${filePath}`;
 
     $.ajax({
@@ -99,12 +99,33 @@
     });
   });
 </script>
+
 <script>
-  const generateArticle = function(title, body, createAt) {
+  const getNews = function() {
+    const baseUrl = "https://api.github.com";
+    const endPoint = "/repos/bbladr/osteopathic-hugo/contents";
+    const filePath = `/content/news`;
+    const url = `${baseUrl}${endPoint}${filePath}`;
+
+    return new Promise(function(resolve, reject) {
+      $.ajax({
+        type: "GET",
+        url: url,
+      }).done(function(res) {
+        resolve(res);
+      }).fail(function(data) {
+        alert('既存記事ファイルの取得に失敗しました');
+      });
+    });
+  }
+</script>
+
+<script>
+  const generateArticle = function(title, body, createAt, number) {
   return `---
 title: "${title}"
 date: ${createAt}
-description : "news"
+description : "news-${number}"
 draft: false
 ---
 ${body}`
@@ -121,3 +142,56 @@ ${body}`
   };
 </script>
 
+<!-- News 削除 -->
+<script>
+  $('#news-delete').click(async function(e) {
+    // token 入力ダイアログにより token を取得
+    const token_id = window.prompt("パスワードを入力してください", "");
+    const token = `token ${token_id}`;
+
+    const name = e.target.name;
+    const news = await getANews(name);
+
+    const baseUrl = "https://api.github.com";
+    const endPoint = "/repos/bbladr/osteopathic-hugo/contents";
+    const filePath = `/content/news/${name}.md`;
+    const url = `${baseUrl}${endPoint}${filePath}`;
+    
+    $.ajax({
+      type: "DELETE",
+      url: url,
+      data: JSON.stringify({
+        "message": "delete a news article",
+        "sha": news.sha,
+      }),
+      headers: {
+        "Authorization": token,
+        "Content-Type": "application/json",
+      },
+    }).done(function(data) {
+      alert('Newsトピックを削除しました。反映まで数分かかります。');
+    }).fail(function(data) {
+      alert('削除に失敗しました');
+    });
+  })
+</script>
+
+<script>
+    const getANews = function(name) {
+      const baseUrl = "https://api.github.com";
+      const endPoint = "/repos/bbladr/osteopathic-hugo/contents";
+      const filePath = `/content/news/${name}.md`;
+      const url = `${baseUrl}${endPoint}${filePath}`;
+  
+      return new Promise(function(resolve, reject) {
+        $.ajax({
+          type: "GET",
+          url: url,
+        }).done(function(res) {
+          resolve(res);
+        }).fail(function(data) {
+          alert('既存記事ファイルの取得に失敗しました');
+        });
+      });
+    }
+  </script>
