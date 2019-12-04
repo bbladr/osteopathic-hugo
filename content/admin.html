@@ -66,19 +66,17 @@
     $('#news-upload').attr("disabled", "true");
 
     const now = new Date();
-    const year = now.getFullYear();
-    const month = toDoubleDigits(now.getMonth() + 1);
-    const date = toDoubleDigits(now.getDate());
     const hour = toDoubleDigits(now.getHours());
     const minute = toDoubleDigits(now.getMinutes());
     const second = toDoubleDigits(now.getSeconds());
-    const time = `${year}${month}${date}${hour}${minute}${second}`;
 
     const news = await getNews();
 
-    const createAt = `${year}-${month}-${date}T${hour}:${minute}:${second}+09:00`;
     const title = $('#news-title-form').val();
     const body = enableSingleBr($('#news-body-form').val());
+    const ymd = $('#news-date-form').val()
+    const createAt = `${ymd}T${hour}:${minute}:${second}+09:00`;
+
     const article = generateArticle(title, body, createAt, news.length+1);
     const articleBase64 = btoa(unescape(encodeURIComponent(article)));
 
