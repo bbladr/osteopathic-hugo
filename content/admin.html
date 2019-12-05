@@ -1,12 +1,40 @@
 <style>
-  #news-title-form {
+  body {
+  background-color: #eee;
+  }
+  .container {
     margin: 10px;
+    padding: 10px 20px 10px 10px;
+    border: solid 1px #ccc;
+  }
+  #news-title-form {
+    margin: 5px;
+    width: 100%;
+    min-height: 30px;
+    font-size: 12px;
+  }
+  #news-date-form {
+    margin: 5px;
+    width: 100%;
+    min-height: 30px;
+    font-size: 12px;
   }
   #news-body-form {
-    margin: 10px;
+    margin: 5px;
+    width: 100%;
+    min-height: 500px;
+    font-size: 12px;
+
   }
   #news-upload {
-    margin: 10px;
+    margin: 5px;
+    height: 30px;
+    font-size: 20px;
+  }
+  #news-delete {
+    margin: 5px;
+    height: 30px;
+    font-size: 20px;
   }
 </style>
 <body>
@@ -14,12 +42,22 @@
     <div class="row">
       <div class="col-12">
         <div class="page-title">News トピック編集ページ</div>
-        <input id="news-title-form" type="text" placeholder="タイトル">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <u class="content-title">新規投稿</u>
       </div>
     </div>
     <div class="row">
+        <div class="col-12">
+          <input id="news-title-form" type="text" placeholder="タイトル">
+        </div>
+      </div>
+    <div class="row">
       <div class="col-12">
-        <label for="start">投稿日:</label>
         <input type="date" id="news-date-form">
       </div>
     </div>
@@ -33,7 +71,13 @@
         <input type="button" id="news-upload" value="送信">
       </div>
     </div>
-
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <u class="content-title">投稿削除</u>
+      </div>
+    </div>
     <div class="row">
       {{ with .Site.GetPage "/news" }}
         {{ range .Pages }}
