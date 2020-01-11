@@ -72,7 +72,7 @@ theme = "timer-hugo"
     # offer Section
     [params.offer]
         enable = true
-        cost = "images/cost.png"
+        coupon = "images/coupon3.png"
         phone = "images/phone-icon.png"
         line = "images/line.png"
         description = ""

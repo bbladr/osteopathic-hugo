@@ -9,7 +9,7 @@
   font-size: 1.5em;
 }
 
-#offer .cost-image{
+#offer .coupon-image{
   margin: 25px;
   border: 3px solid red;
   padding: 10px;
@@ -60,7 +60,7 @@
     font-size: 1.1em;
   }
 
-  #offer .cost-image{
+  #offer .coupon-image{
     margin: 5px;
     border: 3px solid red;
     padding: 10px 0px;
